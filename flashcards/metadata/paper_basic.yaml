@@ -1,0 +1,26 @@
+name: paper_basic
+id: a6ae283a-b3eb-11eb-91b1-c49ded2cae14
+css_file: flashcards/metadata/style.css
+latex_pre: "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\
+  \\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\
+  \\begin{document}\n"
+fields:
+- name: Question
+  font: Arial
+- name: Answer
+  font: Arial
+- name: paper_title
+  font: Arial
+  is_sticky: true
+- name: paper_url
+  font: Arial
+  is_sticky: true
+- name: explanation
+  font: Arial
+templates:
+- name: Card
+  html_file: flashcards/metadata/Card.html
+required_fields_per_template:
+- - 0
+  - any
+  - - 0

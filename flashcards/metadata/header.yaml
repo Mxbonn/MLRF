@@ -1,0 +1,48 @@
+crowdanki_uuid: a6ad8c61-b3eb-11eb-bedd-c49ded2cae14
+deck_config_uuid: a6adcd26-b3eb-11eb-ae04-c49ded2cae14
+deck_configurations:
+- __type__: DeckConfig
+  autoplay: true
+  crowdanki_uuid: a6adcd26-b3eb-11eb-ae04-c49ded2cae14
+  dyn: false
+  lapse:
+    delays:
+    - 20.0
+    leechAction: 1
+    leechFails: 4
+    minInt: 2
+    mult: 0.3
+  maxTaken: 60
+  name: MLRF_Default
+  new:
+    bury: false
+    delays:
+    - 15.0
+    - 1440.0
+    - 4320.0
+    - 8640.0
+    initialFactor: 2500
+    ints:
+    - 15
+    - 20
+    - 0
+    order: 1
+    perDay: 20
+    separate: true
+  replayq: true
+  rev:
+    bury: false
+    ease4: 1.5
+    fuzz: 0.05
+    hardFactor: 1.2
+    ivlFct: 1.0
+    maxIvl: 36500
+    minSpace: 1
+    perDay: 200
+  timer: 0
+desc: ''
+dyn: 0
+extendNew: 10
+extendRev: 50
+mid: 1584960822975
+name: MLRF
