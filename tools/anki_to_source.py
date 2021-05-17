@@ -102,7 +102,8 @@ def get_existing_papers_mapping():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Tool to convert crowdAnki export to the format of this repository.")
-    parser.add_argument('crowdanki_folder', type=str)
+    parser = argparse.ArgumentParser(
+        description="Tool to convert crowdAnki export folder to the format of this repository.")
+    parser.add_argument('crowdanki_folder', type=str, help="Location of the crowdAnki export folder.")
     args = parser.parse_args()
     anki_to_source(args.crowdanki_folder)

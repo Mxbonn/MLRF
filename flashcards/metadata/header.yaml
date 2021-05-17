@@ -27,7 +27,7 @@ deck_configurations:
     - 20
     - 0
     order: 1
-    perDay: 20
+    perDay: 500
     separate: true
   replayq: true
   rev:
