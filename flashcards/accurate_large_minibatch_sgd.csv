@@ -1,0 +1,3 @@
+guid,question,answer,paper_title,paper_url,explanation,tags
+bxi}Ma~kG:,"When the minibatch size is multiplied by \(k\), how should the learning rate be scaled?",Multiply the learning rate by \(k\) (<b>Linear Scaling Rule</b>),"Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour<br>",https://arxiv.org/abs/1706.02677,,
+9m?ur~elt,What is the technique used to train large minibatch SGD.,Linear scaling rule.,"Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour<br>",https://arxiv.org/abs/1706.02677,,

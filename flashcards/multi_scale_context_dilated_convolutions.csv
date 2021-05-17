@@ -1,0 +1,5 @@
+guid,question,answer,paper_title,paper_url,explanation,tags
+q]2OXN!^$),What is the mathematical formula of a <b>dilated convolution&nbsp;</b>\(\left(k \ast_{l} f\right)_t\)?,"\(\left(k \ast_{l} f\right)_t = \sum_{\tau=-\infty}^{\infty} k_\tau \cdot f_{\tau - lt}\),<div>where \(l\) is the dilation factor.&nbsp;</div>",Multi-Scale Context Aggregation by Dilated Convolutions,https://arxiv.org/abs/1511.07122,\(l = 1\) equals a normal convolution,
+"rgD@/f8b,7",What is a different name for a <b>dilated</b> convolution?,<b>Atrous </b>convolution.,Multi-Scale Context Aggregation by Dilated Convolutions,https://arxiv.org/abs/1511.07122,,
+xTKiqg9P<^,What is a different name for an <b>atrous </b>convolution?,<b>Dilated </b>convolution.,Multi-Scale Context Aggregation by Dilated Convolutions,https://arxiv.org/abs/1511.07122,,
+zAJEla>bD#,"If this images demonstrates a normal convolution, visualize how a dilated convolution \(l = 2\) would look like.<div><img src=""0oX5IPr7TlVM2NpEU.gif""><br></div>","<img src=""03cTXIemm0k3Sbask.gif"">",Multi-Scale Context Aggregation by Dilated Convolutions,https://arxiv.org/abs/1511.07122,,

@@ -1,0 +1,53 @@
+html { overflow: scroll; overflow-x: hidden; }
+
+.card {
+    padding: 0px 0px;
+    max-width: 1000px; /* CHANGE CARD SIZE HERE */
+    margin: 0 auto; /* CENTERS THE CARD IN THE MIDDLE OF THE WINDOW */
+    word-wrap: break-word; /* BREAKS UP LONG WORKS */
+
+    font-family:  Bookerly, Verdana;
+    font-size: 18px; /* FONT SIZE */
+    text-align: center; /* ALIGN TEXT */
+    color: #403f53; /* FONT COLOR */
+    line-height: 1.6em;
+    background-color: #FBFBFB; /* BACKGROUND COLOR */
+}
+
+/* IMAGE STYLE */
+img { display: block; max-width: 100%; max-height: none; margin-left: auto; margin: 10px auto 10px auto;}
+tr {font-size: 12px; }
+
+a { color: #265C83 !important; text-decoration: underline; font-style: normal; } /* LINK STYLE */
+.notes a { color: #265C83 !important; text-decoration: underline; font-size: 12px; font-style: normal; } /* LINK STYLE */
+a:hover {
+    color: #7FDBFF;
+}
+a:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+    color: #007BE6;
+}
+
+hr#src {
+    width: 75%;
+    color: black;
+}
+
+.explanation, .notes {
+    font-size: 15px;
+}
+
+/* COLOR ACCENTS FOR BOLD-ITALICS-UNDERLINE */
+.question b, .question u, .question i {
+    color: #d3423e;
+}
+.answer b, .answer u, .answer i {
+    color: #0c969b ;
+}
+.notes b, .notes u, .notes i, .explanation b, .explanation u, .explanation i {
+    color: #4876d6;
+}

@@ -1,0 +1,2 @@
+guid,question,answer,paper_title,paper_url,explanation,tags
+e6S*+O^Wpq,How do you (in simple theory) calculate the <b>receptive</b> input <b>field</b> of a certain cell in a feature map in a convolutional neural network?,"Counting backwards from the feature layer to the input layer, <b>each layer increases the receptive field size by the kernel size</b>.",Understanding the Effective Receptive Field in Deep Convolutional Neural Networks<br>,https://arxiv.org/abs/1701.04128,,
