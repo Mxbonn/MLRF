@@ -13,6 +13,10 @@ The flashcards in this repository are not a replacement for reading the actual p
 Initially the papers covered by this repository are mainly selected based on my own interests and topics I do research about.
 However, by open sourcing this repository, I invite everyone that has interests in using Anki for Machine Learning papers to collaborate on these flashcards.
 
+### Preview
+![image](https://user-images.githubusercontent.com/11473168/118518858-dbe1ec00-b738-11eb-960d-68feddb0f335.png)
+
+
 ## Papers
 
 | Title | URL | flashcards |
