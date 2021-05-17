@@ -13,6 +13,12 @@ The flashcards in this repository are not a replacement for reading the actual p
 Initially the papers covered by this repository are mainly selected based on my own interests and topics I do research about.
 However, by open sourcing this repository, I invite everyone that has interests in using Anki for Machine Learning papers to collaborate on these flashcards.
 
+## Papers
+
+| Title | arXiv | flashcards |
+| ----- | ----- | ---------- |
+| Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
+___
 ## Usage
 The flashcards in this repository are made for [Anki](http://ankisrs.net/).
 Additionally, you also need to install the Anki add-on [CrowdAnki](https://github.com/Stvad/CrowdAnki).
