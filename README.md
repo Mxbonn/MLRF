@@ -5,13 +5,13 @@
 MLRF is a collection of flashcards that can be used with [Anki](http://ankisrs.net/).
 The flashcards in this repository are associated with scientific research papers in the field of machine learning.
 
-As a Machine Learning Researcher I read a lot of papers to keep up with the state-of-the-art. 
+As a machine learning researcher I read a lot of papers to keep up with the state-of-the-art. 
 However, for many papers I was only able to recall "Oh I read a paper about that" when a related topic would come up months later, without being able to give much more details.
 Intrigued by the article from Michael Nielsen ["Augmenting Long-term Memory"](http://augmentingcognition.com/ltm.html), I started using Anki.
 
 The flashcards in this repository are not a replacement for reading the actual paper, but rather an additional resource to retain the knowledge from these papers.
 Initially the papers covered by this repository are mainly selected based on my own interests and topics I do research about.
-However, by open sourcing this repository, I invite everyone that has interests in using Anki for Machine Learning papers to collaborate on this deck.
+However, by open sourcing this repository, I invite everyone that has interests in using Anki for Machine Learning papers to collaborate on these flashcards.
 
 ## Usage
 The flashcards in this repository are made for [Anki](http://ankisrs.net/).
@@ -19,6 +19,8 @@ Additionally, you also need to install the Anki add-on [CrowdAnki](https://githu
 
 Once you cloned this repository you can use `tools/source_to_anki.py` to create a deck that can be imported in Anki.
 `tools/anki_to_source` can be used to update or add your own cards to this repository.
+
+In order to run these scripts you need to install [brain brew](https://github.com/ohare93/brain-brew/) and pandas `pip install brain-brew pandas`.
 
 ### `source_to_anki`
 ```
@@ -51,7 +53,7 @@ Tool to convert crowdAnki export folder to the format of this repository.
 positional arguments:
   crowdanki_folder  Location of the crowdAnki export folder.
 ```
-###Important notes:
+### Important notes:
 
 * This tool only extracts cards that use the `paper_basic` note model from this repository. 
 This means that you can export a deck that contains more than just your machine learning research flashcards.
