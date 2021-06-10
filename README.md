@@ -24,10 +24,12 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Anchor Pruning for Object Detection | [[`arXiv`](https://arxiv.org/abs/2104.00432)] | [[`anchor_pruning.csv`](flashcards/anchor_pruning.csv)]|
 | Attention Is All You Need | [[`arXiv`](https://arxiv.org/abs/1706.03762)] | [`attention_is_all_you_need.csv`](flashcards/attention_is_all_you_need.csv)]|
 | AutoSlim: Towards One-Shot Architecture Search for Channel Numbers | [[`arXiv`](https://arxiv.org/abs/1903.11728)] | [[`autoslim.csv`](flashcards/autoslim.csv)]|
+| Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | [[`arXiv`](https://arxiv.org/abs/1502.03167)] | [[`batchnorm.csv`](flashcards/batchnorm.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
 | Multi-Scale Context Aggregation by Dilated Convolutions | [[`arXiv`](https://arxiv.org/abs/1511.07122)] | [[`multi_scale_context_dilated_convolutions.csv`](flashcards/multi_scale_context_dilated_convolutions.csv)]|
+| On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
