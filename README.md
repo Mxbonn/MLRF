@@ -33,6 +33,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
+| Squeeze and Excitation Networks| [[`arXiv`](https://arxiv.org/abs/1709.01507)] | [[`squeeze_and_excitation.csv`](flashcards/squeeze_and_excitation.csv)]|
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 
