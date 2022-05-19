@@ -20,7 +20,6 @@ However, by open sourcing this repository, I invite everyone that has interests 
 
 | Title | URL | flashcards |
 | ----- | ----- | ---------- |
-
 | Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [[`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
 | Anchor Pruning for Object Detection | [[`arXiv`](https://arxiv.org/abs/2104.00432)] | [[`anchor_pruning.csv`](flashcards/anchor_pruning.csv)]|
 | Attention Is All You Need | [[`arXiv`](https://arxiv.org/abs/1706.03762)] | [`attention_is_all_you_need.csv`](flashcards/attention_is_all_you_need.csv)]|
