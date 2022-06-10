@@ -21,6 +21,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Title | URL | flashcards |
 | ----- | ----- | ---------- |
 | Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [[`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
+| An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [[`arXiv`](https://arxiv.org/abs/2010.11929)] | [[`vision_transformers.csv`](flashcards/vision_transformers.csv)]|
 | Anchor Pruning for Object Detection | [[`arXiv`](https://arxiv.org/abs/2104.00432)] | [[`anchor_pruning.csv`](flashcards/anchor_pruning.csv)]|
 | Attention Is All You Need | [[`arXiv`](https://arxiv.org/abs/1706.03762)] | [`attention_is_all_you_need.csv`](flashcards/attention_is_all_you_need.csv)]|
 | AutoSlim: Towards One-Shot Architecture Search for Channel Numbers | [[`arXiv`](https://arxiv.org/abs/1903.11728)] | [[`autoslim.csv`](flashcards/autoslim.csv)]|
