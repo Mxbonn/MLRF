@@ -32,6 +32,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
 | Multi-Scale Context Aggregation by Dilated Convolutions | [[`arXiv`](https://arxiv.org/abs/1511.07122)] | [[`multi_scale_context_dilated_convolutions.csv`](flashcards/multi_scale_context_dilated_convolutions.csv)]|
+| NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis | [[`arXiv`](https://arxiv.org/abs/2003.08934)] | [[`nerf.csv`](flashcards/nerf.csv)]|
 | On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
@@ -73,6 +74,8 @@ The resulting export folder will be created in `MLRF/build/`. To add the cards t
 * **Move** the cards to a deck of your own.  (This allows you use your own card scheduling steps)
 
 ### `anki_to_source`
+* Open Anki and make sure your devices are all synchronised.
+* In the File menu, select CrowdAnki: Snapshot, and remember the location where it is stored.
 ```
 usage: python tools/anki_to_source.py [-h] crowdanki_folder
 
