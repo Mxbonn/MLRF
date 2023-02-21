@@ -35,6 +35,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis | [[`arXiv`](https://arxiv.org/abs/2003.08934)] | [[`nerf.csv`](flashcards/nerf.csv)]|
 | On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
+| Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers | [[`arXiv`](https://arxiv.org/abs/2012.15840)] | [[`setr.csv`](flashcards/setr.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
 | Squeeze and Excitation Networks| [[`arXiv`](https://arxiv.org/abs/1709.01507)] | [[`squeeze_and_excitation.csv`](flashcards/squeeze_and_excitation.csv)]|
