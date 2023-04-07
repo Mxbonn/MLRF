@@ -32,17 +32,21 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
 | Multi-Scale Context Aggregation by Dilated Convolutions | [[`arXiv`](https://arxiv.org/abs/1511.07122)] | [[`multi_scale_context_dilated_convolutions.csv`](flashcards/multi_scale_context_dilated_convolutions.csv)]|
+| Multiple Choice Learning: Learning to Produce Multiple Structured Outputs | [[`NeurIPS`](https://papers.nips.cc/paper_files/paper/2012/hash/cfbce4c1d7c425baf21d6b6f2babe6be-Abstract.html)] | [[`multiple_choice_learning.csv`](flashcards/multiple_choice_learning.csv)]|
 | NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis | [[`arXiv`](https://arxiv.org/abs/2003.08934)] | [[`nerf.csv`](flashcards/nerf.csv)]|
 | On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
 | Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers | [[`arXiv`](https://arxiv.org/abs/2012.15840)] | [[`setr.csv`](flashcards/setr.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
+| Segment Anything | [[`arXiv`](https://arxiv.org/abs/2304.02643)] | [[`segment_anything.csv`](flashcards/segment_anything.csv)]|
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
 | Squeeze and Excitation Networks| [[`arXiv`](https://arxiv.org/abs/1709.01507)] | [[`squeeze_and_excitation.csv`](flashcards/squeeze_and_excitation.csv)]|
 | The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1803.03635)] | [[`lottery_ticket.csv`](flashcards/lottery_ticket.csv)]|
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
+
+
 ___
 ## Usage
 The flashcards in this repository are made for [Anki](http://ankisrs.net/).
