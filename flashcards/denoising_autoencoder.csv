@@ -1,0 +1,5 @@
+guid,question,answer,paper_title,paper_url,explanation,tags
+foO=T/>kAD,What is a <b>Denoising Autoencoder</b>?,"The <b>Denoising Autoencoder</b>&nbsp;is a modification to the basic autoencoder.<br>The denoising autoencoder partially corrupts the initial input vector \(\mathbf{x}\) in a stochastic manner: \(\tilde{\mathbf{x}} \sim \mathcal{M}_\mathcal{D}(\tilde{\mathbf{x}} \vert \mathbf{x})\).<br>The model is then trained to recover the original input.<br>\[\begin{aligned}
+\tilde{\mathbf{x}}^{(i)} &amp;\sim \mathcal{M}_\mathcal{D}(\tilde{\mathbf{x}}^{(i)} \vert \mathbf{x}^{(i)})\\
+L_\text{DAE}(\theta, \phi) &amp;= \frac{1}{n} \sum_{i=1}^n (\mathbf{x}^{(i)} - f_\theta(g_\phi(\tilde{\mathbf{x}}^{(i)})))^2
+\end{aligned}\]where \(\mathcal{M}_\mathcal{D}\) defines the mapping from the true data samples to the noisy or corrupted ones.<br>",Extracting and Composing Robust Features with Denoising&nbsp;Autoencoders,http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf,"<img src=""denoising-autoencoder-architecture.png""><br>Source:&nbsp;https://lilianweng.github.io/posts/2018-08-12-vae",

@@ -24,10 +24,12 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [[`arXiv`](https://arxiv.org/abs/2010.11929)] | [[`vision_transformers.csv`](flashcards/vision_transformers.csv)]|
 | Anchor Pruning for Object Detection | [[`arXiv`](https://arxiv.org/abs/2104.00432)] | [[`anchor_pruning.csv`](flashcards/anchor_pruning.csv)]|
 | Attention Is All You Need | [[`arXiv`](https://arxiv.org/abs/1706.03762)] | [`attention_is_all_you_need.csv`](flashcards/attention_is_all_you_need.csv)]|
+| Auto-Encoding Variational Bayes | [[`arXiv`](https://arxiv.org/abs/1312.6114)] | [[`vae.csv`](flashcards/vae.csv)]|
 | AutoSlim: Towards One-Shot Architecture Search for Channel Numbers | [[`arXiv`](https://arxiv.org/abs/1903.11728)] | [[`autoslim.csv`](flashcards/autoslim.csv)]|
 | Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | [[`arXiv`](https://arxiv.org/abs/1502.03167)] | [[`batchnorm.csv`](flashcards/batchnorm.csv)]|
 | DETR: End-to-End Object Detection with Transformers | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`detr.csv`](flashcards/detr.csv)]|
 | Distilling the Knowledge in a Neural Network | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`knowledge_distillation.csv`](flashcards/knowledge_distillation.csv)]|
+| Extracting and Composing Robust Features with Denoising Autoencoders | [[`ICML`](http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)] | [[`denoising_autoencoder.csv`](flashcards/denoising_autoencoder.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
