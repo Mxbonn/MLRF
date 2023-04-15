@@ -28,6 +28,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | AutoSlim: Towards One-Shot Architecture Search for Channel Numbers | [[`arXiv`](https://arxiv.org/abs/1903.11728)] | [[`autoslim.csv`](flashcards/autoslim.csv)]|
 | Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | [[`arXiv`](https://arxiv.org/abs/1502.03167)] | [[`batchnorm.csv`](flashcards/batchnorm.csv)]|
 | DETR: End-to-End Object Detection with Transformers | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`detr.csv`](flashcards/detr.csv)]|
+| Denoising Diffusion Probabilistic Models | [[`arXiv`](https://arxiv.org/abs/2006.11239)] | [[`diffusion_models.csv`](flashcards/diffusion_models.csv)]|
 | Distilling the Knowledge in a Neural Network | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`knowledge_distillation.csv`](flashcards/knowledge_distillation.csv)]|
 | Extracting and Composing Robust Features with Denoising Autoencoders | [[`ICML`](http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)] | [[`denoising_autoencoder.csv`](flashcards/denoising_autoencoder.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
@@ -47,6 +48,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
+
 
 
 ___
