@@ -20,6 +20,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 
 | Title | URL | flashcards |
 | ----- | ----- | ---------- |
+| A Simple Framework for Contrastive Learning of Visual Representations | [[`arXiv`](https://arxiv.org/abs/2002.05709)] | [[`simclr.csv`](flashcards/simclr.csv)]|
 | Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [[`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
 | An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [[`arXiv`](https://arxiv.org/abs/2010.11929)] | [[`vision_transformers.csv`](flashcards/vision_transformers.csv)]|
 | Anchor Pruning for Object Detection | [[`arXiv`](https://arxiv.org/abs/2104.00432)] | [[`anchor_pruning.csv`](flashcards/anchor_pruning.csv)]|
@@ -31,6 +32,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Denoising Diffusion Probabilistic Models | [[`arXiv`](https://arxiv.org/abs/2006.11239)] | [[`diffusion_models.csv`](flashcards/diffusion_models.csv)]|
 | Distilling the Knowledge in a Neural Network | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`knowledge_distillation.csv`](flashcards/knowledge_distillation.csv)]|
 | Extracting and Composing Robust Features with Denoising Autoencoders | [[`ICML`](http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)] | [[`denoising_autoencoder.csv`](flashcards/denoising_autoencoder.csv)]|
+| FaceNet: A Unified Embedding for Face Recognition and Clustering| [[`arXiv`](https://arxiv.org/abs/1503.03832)] | [[`facenet.csv`](flashcards/facenet.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
@@ -48,8 +50,6 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
-
-
 
 ___
 ## Usage
