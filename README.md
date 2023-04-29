@@ -27,6 +27,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Attention Is All You Need | [[`arXiv`](https://arxiv.org/abs/1706.03762)] | [`attention_is_all_you_need.csv`](flashcards/attention_is_all_you_need.csv)]|
 | Auto-Encoding Variational Bayes | [[`arXiv`](https://arxiv.org/abs/1312.6114)] | [[`vae.csv`](flashcards/vae.csv)]|
 | AutoSlim: Towards One-Shot Architecture Search for Channel Numbers | [[`arXiv`](https://arxiv.org/abs/1903.11728)] | [[`autoslim.csv`](flashcards/autoslim.csv)]|
+| Barlow Twins: Self-Supervised Learning via Redundancy Reduction | [[`arXiv`](https://arxiv.org/abs/2103.03230)] | [[`barlow_twins.csv`](flashcards/barlow_twins.csv)]|
 | Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | [[`arXiv`](https://arxiv.org/abs/1502.03167)] | [[`batchnorm.csv`](flashcards/batchnorm.csv)]|
 | DETR: End-to-End Object Detection with Transformers | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`detr.csv`](flashcards/detr.csv)]|
 | Denoising Diffusion Probabilistic Models | [[`arXiv`](https://arxiv.org/abs/2006.11239)] | [[`diffusion_models.csv`](flashcards/diffusion_models.csv)]|
@@ -35,6 +36,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | FaceNet: A Unified Embedding for Face Recognition and Clustering| [[`arXiv`](https://arxiv.org/abs/1503.03832)] | [[`facenet.csv`](flashcards/facenet.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | High-Resolution Image Synthesis with Latent Diffusion Models | [[`arXiv`](https://arxiv.org/abs/2112.10752)] | [[`stable_diffusion.csv`](flashcards/stable_diffusion.csv)]|
+| Learning Transferable Visual Models From Natural Language Supervision | [[`arXiv`](https://arxiv.org/abs/2103.00020)] | [[`clip.csv`](flashcards/clip.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
 | Multi-Scale Context Aggregation by Dilated Convolutions | [[`arXiv`](https://arxiv.org/abs/1511.07122)] | [[`multi_scale_context_dilated_convolutions.csv`](flashcards/multi_scale_context_dilated_convolutions.csv)]|
