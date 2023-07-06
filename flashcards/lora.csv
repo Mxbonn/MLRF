@@ -1,0 +1,2 @@
+guid,question,answer,paper_title,paper_url,explanation,tags
+f>Ul@5VJS,How does <b>LoRA</b> work?,"LoRA freezes the pre-trained model weights and <b>injects trainable rank decomposition matrices</b> into each&nbsp;layer of the Transformer architecture.<br><img src=""paste-93f70700ed8f25149460afe0c85505cd00ee1d46.jpg"">",LoRA: Low-Rank Adaptation of Large Language Models,https://arxiv.org/abs/2106.09685,"They use a random Gaussian initialization for \(A\) and&nbsp;zero for \(B\), so \(\Delta W = BA\) is zero at the beginning of training.",

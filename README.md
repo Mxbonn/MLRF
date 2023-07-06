@@ -30,6 +30,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Barlow Twins: Self-Supervised Learning via Redundancy Reduction | [[`arXiv`](https://arxiv.org/abs/2103.03230)] | [[`barlow_twins.csv`](flashcards/barlow_twins.csv)]|
 | Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | [[`arXiv`](https://arxiv.org/abs/1502.03167)] | [[`batchnorm.csv`](flashcards/batchnorm.csv)]|
 | DETR: End-to-End Object Detection with Transformers | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`detr.csv`](flashcards/detr.csv)]|
+| Deep Reinforcement Learning with Double Q-learning | [[`arXiv`](https://arxiv.org/abs/1509.06461v3)] | [[`double_qlearning.csv`](flashcards/double_qlearning.csv)]|
 | Denoising Diffusion Probabilistic Models | [[`arXiv`](https://arxiv.org/abs/2006.11239)] | [[`diffusion_models.csv`](flashcards/diffusion_models.csv)]|
 | Distilling the Knowledge in a Neural Network | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`knowledge_distillation.csv`](flashcards/knowledge_distillation.csv)]|
 | Extracting and Composing Robust Features with Denoising Autoencoders | [[`ICML`](http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)] | [[`denoising_autoencoder.csv`](flashcards/denoising_autoencoder.csv)]|
@@ -37,6 +38,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | High-Resolution Image Synthesis with Latent Diffusion Models | [[`arXiv`](https://arxiv.org/abs/2112.10752)] | [[`stable_diffusion.csv`](flashcards/stable_diffusion.csv)]|
 | Learning Transferable Visual Models From Natural Language Supervision | [[`arXiv`](https://arxiv.org/abs/2103.00020)] | [[`clip.csv`](flashcards/clip.csv)]|
+| LoRA: Low-Rank Adaptation of Large Language Models | [[`arXiv`](https://arxiv.org/abs/2106.09685)] | [[`lora.csv`](flashcards/lora.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
 | Multi-Scale Context Aggregation by Dilated Convolutions | [[`arXiv`](https://arxiv.org/abs/1511.07122)] | [[`multi_scale_context_dilated_convolutions.csv`](flashcards/multi_scale_context_dilated_convolutions.csv)]|
@@ -44,6 +46,8 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis | [[`arXiv`](https://arxiv.org/abs/2003.08934)] | [[`nerf.csv`](flashcards/nerf.csv)]|
 | On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
+| Playing Atari with Deep Reinforcement Learning | [[`arXiv`](https://arxiv.org/abs/1312.5602)] | [[`deep_rl.csv`](flashcards/deep_rl.csv)]|
+| Proximal Policy Optimization Algorithms | [[`arXiv`](https://arxiv.org/abs/1707.06347)] | [[`ppo.csv`](flashcards/ppo.csv)]|
 | Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers | [[`arXiv`](https://arxiv.org/abs/2012.15840)] | [[`setr.csv`](flashcards/setr.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
 | Segment Anything | [[`arXiv`](https://arxiv.org/abs/2304.02643)] | [[`segment_anything.csv`](flashcards/segment_anything.csv)]|
@@ -53,7 +57,6 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
-
 
 ___
 ## Usage
