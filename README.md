@@ -37,6 +37,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | FaceNet: A Unified Embedding for Face Recognition and Clustering| [[`arXiv`](https://arxiv.org/abs/1503.03832)] | [[`facenet.csv`](flashcards/facenet.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | High-Resolution Image Synthesis with Latent Diffusion Models | [[`arXiv`](https://arxiv.org/abs/2112.10752)] | [[`stable_diffusion.csv`](flashcards/stable_diffusion.csv)]|
+| Learned Thresholds Token Merging and Pruning for Vision Transformers | [[`arXiv`](https://arxiv.org/abs/2307.10780)] | [[`ltmp.csv`](flashcards/ltmp.csv)]|
 | Learning Transferable Visual Models From Natural Language Supervision | [[`arXiv`](https://arxiv.org/abs/2103.00020)] | [[`clip.csv`](flashcards/clip.csv)]|
 | LoRA: Low-Rank Adaptation of Large Language Models | [[`arXiv`](https://arxiv.org/abs/2106.09685)] | [[`lora.csv`](flashcards/lora.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
@@ -54,6 +55,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
 | Squeeze and Excitation Networks| [[`arXiv`](https://arxiv.org/abs/1709.01507)] | [[`squeeze_and_excitation.csv`](flashcards/squeeze_and_excitation.csv)]|
 | The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1803.03635)] | [[`lottery_ticket.csv`](flashcards/lottery_ticket.csv)]|
+| Token Merging: Your ViT But Faster | [[`arXiv`](https://arxiv.org/abs/2210.09461)] | [[`tome.csv`](flashcards/tome.csv)]|
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
