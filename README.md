@@ -47,6 +47,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis | [[`arXiv`](https://arxiv.org/abs/2003.08934)] | [[`nerf.csv`](flashcards/nerf.csv)]|
 | On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
+| Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer | [[`arXiv`](https://arxiv.org/abs/1701.06538)] | [[`moe.csv`](flashcards/moe.csv)]|
 | Playing Atari with Deep Reinforcement Learning | [[`arXiv`](https://arxiv.org/abs/1312.5602)] | [[`deep_rl.csv`](flashcards/deep_rl.csv)]|
 | Proximal Policy Optimization Algorithms | [[`arXiv`](https://arxiv.org/abs/1707.06347)] | [[`ppo.csv`](flashcards/ppo.csv)]|
 | Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers | [[`arXiv`](https://arxiv.org/abs/2012.15840)] | [[`setr.csv`](flashcards/setr.csv)]|
@@ -54,6 +55,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Segment Anything | [[`arXiv`](https://arxiv.org/abs/2304.02643)] | [[`segment_anything.csv`](flashcards/segment_anything.csv)]|
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
 | Squeeze and Excitation Networks| [[`arXiv`](https://arxiv.org/abs/1709.01507)] | [[`squeeze_and_excitation.csv`](flashcards/squeeze_and_excitation.csv)]|
+| Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity | [[`arXiv`](https://arxiv.org/abs/2101.03961)] | [[`switch_transformer.csv`](flashcards/switch_transformer.csv)]|
 | The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1803.03635)] | [[`lottery_ticket.csv`](flashcards/lottery_ticket.csv)]|
 | Token Merging: Your ViT But Faster | [[`arXiv`](https://arxiv.org/abs/2210.09461)] | [[`tome.csv`](flashcards/tome.csv)]|
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
@@ -109,7 +111,4 @@ positional arguments:
 This means that you can export a deck that contains more than just your machine learning research flashcards.
 * `paper_basic` cards that are tagged with `DoNotSync` are ignored. 
 * Tags are not copied to this repository 
-
-
-
 
