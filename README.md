@@ -40,6 +40,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Learned Thresholds Token Merging and Pruning for Vision Transformers | [[`arXiv`](https://arxiv.org/abs/2307.10780)] | [[`ltmp.csv`](flashcards/ltmp.csv)]|
 | Learning Transferable Visual Models From Natural Language Supervision | [[`arXiv`](https://arxiv.org/abs/2103.00020)] | [[`clip.csv`](flashcards/clip.csv)]|
 | LoRA: Low-Rank Adaptation of Large Language Models | [[`arXiv`](https://arxiv.org/abs/2106.09685)] | [[`lora.csv`](flashcards/lora.csv)]|
+| Mixture-of-Experts with Expert Choice Routing | [[`arXiv`](https://arxiv.org/abs/2202.09368)] | [[`expert_choice.csv`](flashcards/expert_choice.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
 | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [[`arXiv`](https://arxiv.org/abs/1704.04861)] | [[`mobilenetv1.csv`](flashcards/mobilenetv1.csv)]|
 | Multi-Scale Context Aggregation by Dilated Convolutions | [[`arXiv`](https://arxiv.org/abs/1511.07122)] | [[`multi_scale_context_dilated_convolutions.csv`](flashcards/multi_scale_context_dilated_convolutions.csv)]|
