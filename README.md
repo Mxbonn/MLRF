@@ -2,7 +2,7 @@
 **M**achine **L**earning **R**esearch **F**lashcards (for [Anki](http://ankisrs.net/))
 
 ## Description
-MLRF is a collection of flashcards that can be used with [Anki](http://ankisrs.net/).
+MLRF is a collection of machine learning flashcards that can be used with [Anki](http://ankisrs.net/).
 The flashcards in this repository are associated with scientific research papers in the field of machine learning.
 
 As a machine learning researcher I read a lot of papers to keep up with the state-of-the-art. 
