@@ -37,6 +37,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | FaceNet: A Unified Embedding for Face Recognition and Clustering| [[`arXiv`](https://arxiv.org/abs/1503.03832)] | [[`facenet.csv`](flashcards/facenet.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
 | High-Resolution Image Synthesis with Latent Diffusion Models | [[`arXiv`](https://arxiv.org/abs/2112.10752)] | [[`stable_diffusion.csv`](flashcards/stable_diffusion.csv)]|
+| Instant Neural Graphics Primitives with a Multiresolution Hash Encoding | [[`arXiv`](https://arxiv.org/abs/2201.05989)] | [[`instant_ngp.csv`](flashcards/instant_ngp.csv)]|
 | Learned Thresholds Token Merging and Pruning for Vision Transformers | [[`arXiv`](https://arxiv.org/abs/2307.10780)] | [[`ltmp.csv`](flashcards/ltmp.csv)]|
 | Learning Transferable Visual Models From Natural Language Supervision | [[`arXiv`](https://arxiv.org/abs/2103.00020)] | [[`clip.csv`](flashcards/clip.csv)]|
 | LoRA: Low-Rank Adaptation of Large Language Models | [[`arXiv`](https://arxiv.org/abs/2106.09685)] | [[`lora.csv`](flashcards/lora.csv)]|
