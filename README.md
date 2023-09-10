@@ -41,6 +41,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Learned Thresholds Token Merging and Pruning for Vision Transformers | [[`arXiv`](https://arxiv.org/abs/2307.10780)] | [[`ltmp.csv`](flashcards/ltmp.csv)]|
 | Learning Transferable Visual Models From Natural Language Supervision | [[`arXiv`](https://arxiv.org/abs/2103.00020)] | [[`clip.csv`](flashcards/clip.csv)]|
 | LoRA: Low-Rank Adaptation of Large Language Models | [[`arXiv`](https://arxiv.org/abs/2106.09685)] | [[`lora.csv`](flashcards/lora.csv)]|
+| Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields | [[`arXiv`](https://arxiv.org/abs/2111.12077)] | [[`mipnerf360.csv`](flashcards/mipnerf360.csv)]|
 | Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields | [[`arXiv`](https://arxiv.org/abs/2103.13415)] | [[`mipnerf.csv`](flashcards/mipnerf.csv)]|
 | Mixture-of-Experts with Expert Choice Routing | [[`arXiv`](https://arxiv.org/abs/2202.09368)] | [[`expert_choice.csv`](flashcards/expert_choice.csv)]|
 | MobileNetV2: Inverted Residuals and Linear Bottlenecks | [[`arXiv`](https://arxiv.org/abs/1801.04381)] | [[`mobilenetv2.csv`](flashcards/mobilenetv2.csv)]|
@@ -68,6 +69,8 @@ However, by open sourcing this repository, I invite everyone that has interests 
 ___
 ## Usage
 The flashcards in this repository are made for [Anki](http://ankisrs.net/).
+However, the cards are stored here in csv formats, so you can also use them as inputs to a different flashcards system.
+In case you edit the raw csvs and want to sync them here, you can leave the `guid` column of new cards empty.
 Additionally, you also need to install the Anki add-on [CrowdAnki](https://github.com/Stvad/CrowdAnki).
 
 Once you cloned this repository you can use `tools/source_to_anki.py` to create a deck that can be imported in Anki.
