@@ -30,6 +30,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Barlow Twins: Self-Supervised Learning via Redundancy Reduction | [[`arXiv`](https://arxiv.org/abs/2103.03230)] | [[`barlow_twins.csv`](flashcards/barlow_twins.csv)]|
 | Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | [[`arXiv`](https://arxiv.org/abs/1502.03167)] | [[`batchnorm.csv`](flashcards/batchnorm.csv)]|
 | DETR: End-to-End Object Detection with Transformers | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`detr.csv`](flashcards/detr.csv)]|
+| DUSt3R: Geometric 3D Vision Made Easy| [[`arXiv`](https://arxiv.org/abs/2312.14132)] | [[`dust3r.csv`](flashcards/dust3r.csv)]|
 | Deep Reinforcement Learning with Double Q-learning | [[`arXiv`](https://arxiv.org/abs/1509.06461v3)] | [[`double_qlearning.csv`](flashcards/double_qlearning.csv)]|
 | Denoising Diffusion Probabilistic Models | [[`arXiv`](https://arxiv.org/abs/2006.11239)] | [[`diffusion_models.csv`](flashcards/diffusion_models.csv)]|
 | Distilling the Knowledge in a Neural Network | [[`arXiv`](https://arxiv.org/abs/1503.02531)] | [[`knowledge_distillation.csv`](flashcards/knowledge_distillation.csv)]|
@@ -65,7 +66,6 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
-
 ___
 ## Usage
 The flashcards in this repository are made for [Anki](http://ankisrs.net/).
