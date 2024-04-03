@@ -20,6 +20,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 
 | Title | URL | flashcards |
 | ----- | ----- | ---------- |
+| 3D Gaussian Splatting for Real-Time Radiance Field Rendering| [[`arXiv`](https://arxiv.org/abs/2308.04079)] | [[`gaussian_splatting.csv`](flashcards/gaussian_splatting.csv)]|
 | A Simple Framework for Contrastive Learning of Visual Representations | [[`arXiv`](https://arxiv.org/abs/2002.05709)] | [[`simclr.csv`](flashcards/simclr.csv)]|
 | Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [[`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
 | An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | [[`arXiv`](https://arxiv.org/abs/2010.11929)] | [[`vision_transformers.csv`](flashcards/vision_transformers.csv)]|
