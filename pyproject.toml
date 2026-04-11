@@ -1,0 +1,9 @@
+[project]
+name = "mlrf"
+version = "0.1.0"
+description = "Machine Learning Research Flashcards"
+requires-python = ">=3.12"
+dependencies = [
+    "brain-brew",
+    "pandas",
+]

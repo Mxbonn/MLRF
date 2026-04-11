@@ -9,6 +9,8 @@ from brain_brew.build_tasks.deck_parts.save_media_group_to_folder import SaveMed
 from brain_brew.configuration.file_manager import FileManager
 from brain_brew.representation.yaml.media_group import MediaGroup
 
+from md_utils import write_md_file
+
 NOTE_MODEL = 'paper_basic'
 FIELD_NAMES = ['question', 'answer', 'paper_title', 'paper_url', 'explanation']
 MEDIA_FOLDER = 'flashcards/metadata/media/'
@@ -75,35 +77,37 @@ def anki_to_source(crowdanki_folder):
         for delete_name in to_delete:
             existing_media_group.media_files[delete_name].delete_self()
 
+    # Write to Markdown files instead of CSV
     notes_folder = project_root.joinpath(NOTES_FOLDER)
     mapping = get_existing_papers_mapping()
     i = 1
     for name, group in df.groupby('paper_title'):
         if name in mapping:
-            filename = notes_folder.joinpath(f'{mapping[name]}.csv')
+            filename = notes_folder / f'{mapping[name]}.md'
         else:
-            filename = notes_folder.joinpath(f'{i}.csv')
+            filename = notes_folder / f'{i}.md'
             i += 1
-        group.to_csv(filename, index=False)
+        cards = group.to_dict('records')
+        write_md_file(filename, cards)
 
 
 def get_existing_papers_mapping():
     project_root = Path(__file__).parents[1]
     notes_folder = project_root.joinpath(NOTES_FOLDER)
-    csv_files = notes_folder.glob('*.csv')
-    mapping = dict()
-    for file in csv_files:
-        filename = file.stem
-        df = pd.read_csv(file)
-        paper_title = df['paper_title'].iloc[0]
-        mapping[paper_title] = filename
+    mapping = {}
+
+    from md_utils import parse_md_file
+    for md_file in notes_folder.glob('*.md'):
+        cards = parse_md_file(md_file)
+        if cards:
+            mapping[cards[0]['paper_title']] = md_file.stem
 
     return mapping
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Tool to convert crowdAnki export folder to the format of this repository.")
-    parser.add_argument('crowdanki_folder', type=str, help="Location of the crowdAnki export folder.")
+        description="Convert CrowdAnki export folder to Markdown flashcard files.")
+    parser.add_argument('crowdanki_folder', type=str, help="Location of the CrowdAnki export folder.")
     args = parser.parse_args()
     anki_to_source(args.crowdanki_folder)
