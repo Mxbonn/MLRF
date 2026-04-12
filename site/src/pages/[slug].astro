@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import { renderMarkdown } from '../lib/renderMarkdown';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Generate static paths for all papers
+export async function getStaticPaths() {
+  const papers = await getCollection('papers');
+  return papers.map((paper) => ({
+    params: { slug: paper.id },
+    props: { paper }
+  }));
+}
+
+interface Props {
+  paper: any;
+}
+
+const { paper } = Astro.props;
+const papers = await getCollection('papers');
+const sortedPapers = papers.sort((a, b) =>
+  a.data.paper_title.localeCompare(b.data.paper_title)
+);
+
+// Render all card content at build time
+const renderedCards = await Promise.all(
+  paper.data.cards.map(async (card: any) => ({
+    ...card,
+    questionHtml: await renderMarkdown(card.question),
+    answerHtml: await renderMarkdown(card.answer),
+    explanationHtml: card.explanation ? await renderMarkdown(card.explanation) : null
+  }))
+);
+---
+
+<BaseLayout
+  title={`${paper.data.paper_title} - MLRF`}
+  description={`Flashcards for ${paper.data.paper_title}`}
+>
+  <div class="article-container">
+    <div class="paper-header">
+      <h1>{paper.data.paper_title}</h1>
+      <div class="paper-links">
+        {
+          paper.data.paper_url && (
+            <a href={paper.data.paper_url} target="_blank" rel="noopener">
+              Read Paper
+            </a>
+          )
+        }
+      </div>
+    </div>
+
+    <div class="flashcards-container">
+      {
+        renderedCards.map((card: any) => (
+          <div class="flashcard" data-guid={card.guid}>
+            <div class="front">
+              <div class="question" set:html={card.questionHtml} />
+            </div>
+            <div class="back">
+              <hr />
+              <div class="answer" set:html={card.answerHtml} />
+              {card.explanationHtml && (
+                <div class="explanation" set:html={card.explanationHtml} />
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="content-widget-hr">
+      <p>
+        <strong>M</strong>achine <strong>L</strong>earning <strong>R</strong>esearch
+        <strong>F</strong>lashcards is a collection of flashcards associated with scientific
+        research papers in the field of machine learning. Best used with Anki or Obsidian.{' '}
+        <a href="https://github.com/Mxbonn/MLRF" target="_blank">
+          Edit MLRF on GitHub.
+        </a>
+      </p>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<script>
+  // Flashcard flip functionality
+  const flashcards = document.querySelectorAll('.flashcard');
+  flashcards.forEach(card => {
+    card.addEventListener('click', function() {
+      const back = this.querySelector('.back');
+      if (back) {
+        back.classList.toggle('expanded');
+      }
+    });
+  });
+</script>
+
+<style>
+  .flashcards-container {
+    margin: 2rem 0;
+  }
+</style>

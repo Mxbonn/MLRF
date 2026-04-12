@@ -7,4 +7,12 @@ __pycache__/
 
 build/
 
+.vscode
+
+# Website build artifacts
+site/node_modules/
+site/dist/
+site/.astro/
+site/public/images/
+
 CLAUDE.md

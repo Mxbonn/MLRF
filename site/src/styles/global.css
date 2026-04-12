@@ -1,0 +1,353 @@
+/* Global Typography & Layout */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  background: #fff;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #313131;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: #e07a5f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+/* Container Widths */
+.article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Index/Grid Cards (.card-simple) */
+.card-simple {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.card-simple:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #e07a5f;
+}
+
+.card-simple .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #313131;
+}
+
+.card-simple .card-meta {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.card-simple .card-badge {
+  background: #e07a5f;
+  color: #fff;
+  padding: 0.15rem 0.4rem;
+  border-radius: 2px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Flashcard Styling */
+.flashcard {
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.flashcard .front {
+  padding: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.flashcard .back {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.2s ease;
+  padding: 0 15px;
+}
+
+.flashcard .back.expanded {
+  max-height: 100%;
+}
+
+.flashcard hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Question styling */
+.flashcard .question {
+  padding: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.flashcard .question b,
+.flashcard .question strong,
+.flashcard .question u,
+.flashcard .question em {
+  color: #d3423e;
+}
+
+/* Answer styling */
+.flashcard .answer {
+  padding: 15px;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.flashcard .answer b,
+.flashcard .answer strong,
+.flashcard .answer u,
+.flashcard .answer em {
+  color: #0c969b;
+}
+
+.flashcard .question img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 3px;
+  display: block;
+}
+
+.flashcard .answer img,
+.flashcard .explanation img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 3px;
+}
+
+/* Explanation/Notes styling */
+.flashcard .explanation {
+  padding: 15px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.6;
+}
+
+.flashcard .explanation b,
+.flashcard .explanation strong,
+.flashcard .explanation u,
+.flashcard .explanation em {
+  color: #4876d6;
+}
+
+/* Math rendering (KaTeX) */
+.katex {
+  font-size: 1em;
+}
+
+.flashcard .question .katex,
+.flashcard .answer .katex,
+.flashcard .explanation .katex {
+  color: inherit;
+}
+
+/* Lists in flashcards */
+.flashcard ul,
+.flashcard ol {
+  text-align: left;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.flashcard li {
+  margin: 0.25rem 0;
+}
+
+/* Pager (prev/next navigation) */
+.post-nav {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  display: flex;
+  gap: 0;
+}
+
+.post-nav-item {
+  display: inline-block;
+  hyphens: auto;
+  word-wrap: break-word;
+  padding: 11px 0 12px;
+  width: 50%;
+}
+
+.post-nav-item:first-child {
+  text-align: left;
+}
+
+.post-nav-item:last-child {
+  text-align: right;
+}
+
+.post-nav-item a {
+  color: #2b2b2b;
+  line-height: 1.7;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.post-nav-item a:hover {
+  color: #e07a5f;
+  text-decoration: underline;
+}
+
+/* Paper header */
+.paper-header {
+  margin-bottom: 2rem;
+}
+
+.paper-header h1 {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.paper-header p {
+  margin: 0.5rem 0;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.paper-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.paper-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #e07a5f;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.paper-links a:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Content styling */
+.content-widget-hr {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.content-widget-hr b {
+  color: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .page-wrapper {
+    padding: 0 0.75rem;
+  }
+
+  .card-simple {
+    padding: 12px 15px;
+  }
+
+  .flashcard .question,
+  .flashcard .answer,
+  .flashcard .explanation {
+    padding: 12px;
+  }
+
+  .post-nav-item {
+    font-size: 0.75rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .site-header,
+  .site-footer {
+    display: none;
+  }
+
+  .page-wrapper {
+    max-width: 100%;
+  }
+}

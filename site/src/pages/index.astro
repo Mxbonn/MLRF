@@ -1,0 +1,117 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Get all papers and sort alphabetically by title
+const papers = await getCollection('papers');
+const sortedPapers = papers.sort((a, b) =>
+  a.data.paper_title.localeCompare(b.data.paper_title)
+);
+
+// Calculate statistics
+const paperCount = sortedPapers.length;
+const totalCards = sortedPapers.reduce((sum, paper) => sum + paper.data.cardCount, 0);
+---
+
+<BaseLayout
+  title="MLRF - Machine Learning Research Flashcards"
+  description="A collection of machine learning flashcards associated with scientific research papers. Best used with Anki."
+>
+  <div class="article-container">
+    <h1>Machine Learning Research Flashcards</h1>
+
+    <div class="intro-section">
+      <p>
+        <strong>M</strong>achine <strong>L</strong>earning <strong>R</strong>esearch
+        <strong>F</strong>lashcards is a collection of flashcards associated with scientific
+        research papers in the field of machine learning. The flashcards are best used with
+        <a href="https://ankiweb.net/" target="_blank" class="inline-link">Anki</a>, a spaced repetition system.
+      </p>
+      <p>
+        <strong>{paperCount} papers</strong> • <strong>{totalCards} cards</strong>
+      </p>
+    </div>
+
+    <div class="papers-grid">
+      {
+        sortedPapers.map(paper => (
+          <div class="card-simple">
+            <a href={`/${paper.id}/`} class="paper-card">
+              <div class="card-title">{paper.data.paper_title}</div>
+              <div class="card-meta">
+                <span class="card-badge">{paper.data.cardCount} cards</span>
+              </div>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .intro-section {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #e07a5f;
+  }
+
+  .intro-section p {
+    margin: 0.5rem 0;
+  }
+
+  .intro-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro-section a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #e07a5f;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .intro-section a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+
+  .intro-section .inline-link {
+    display: inline;
+    padding: 0;
+    background: none;
+    color: #e07a5f;
+    border-radius: 0;
+    margin-top: 0;
+    font-size: inherit;
+  }
+
+  .intro-section .inline-link:hover {
+    opacity: 0.7;
+  }
+
+  .papers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .paper-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+
+  @media (max-width: 768px) {
+    .papers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

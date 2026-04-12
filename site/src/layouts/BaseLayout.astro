@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+
+    <!-- KaTeX CSS for math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <a href="/" class="site-title">
+          <span class="highlight">MLRF</span>
+          <span class="subtitle">Machine Learning Research Flashcards</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="page-wrapper">
+      <slot />
+    </main>
+
+  </body>
+</html>
+
+<style>
+  .site-header {
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .site-title {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .site-title .highlight {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #e07a5f;
+  }
+
+  .site-title .subtitle {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .page-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: calc(100vh - 200px);
+  }
+
+  .site-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    margin-top: 3rem;
+  }
+
+  .site-footer a {
+    color: #e07a5f;
+    text-decoration: none;
+  }
+
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+</style>
