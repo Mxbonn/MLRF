@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
     "astro": "^6.1.5",
     "rehype-katex": "^7.0.1",
     "rehype-stringify": "^10.0.1",

@@ -11,11 +11,28 @@ const sortedPapers = papers.sort((a, b) =>
 // Calculate statistics
 const paperCount = sortedPapers.length;
 const totalCards = sortedPapers.reduce((sum, paper) => sum + paper.data.cardCount, 0);
+
+// Generate JSON-LD structured data for homepage
+const schemaJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'MLRF - Machine Learning Research Flashcards',
+  description: 'A collection of machine learning flashcards associated with scientific research papers. Best used with Anki.',
+  url: Astro.site?.toString(),
+  numberOfItems: totalCards,
+  hasPart: sortedPapers.map(paper => ({
+    '@type': 'ScholarArticle',
+    headline: paper.data.paper_title,
+    url: new URL(`/${paper.id}/`, Astro.site).toString(),
+    numberOfItems: paper.data.cardCount
+  }))
+});
 ---
 
 <BaseLayout
   title="MLRF - Machine Learning Research Flashcards"
   description="A collection of machine learning flashcards associated with scientific research papers. Best used with Anki."
+  schemaJson={schemaJson}
 >
   <div class="article-container">
     <h1>Machine Learning Research Flashcards</h1>

@@ -31,11 +31,22 @@ const renderedCards = await Promise.all(
     explanationHtml: card.explanation ? await renderMarkdown(card.explanation) : null
   }))
 );
+
+// Generate JSON-LD structured data
+const schemaJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'ScholarArticle',
+  headline: paper.data.paper_title,
+  description: `Study guide with ${paper.data.cardCount} flashcards for ${paper.data.paper_title}`,
+  url: new URL(`/${paper.id}/`, Astro.site).toString(),
+  ...(paper.data.paper_url && { isPartOf: { '@type': 'ScholarArticle', url: paper.data.paper_url } })
+});
 ---
 
 <BaseLayout
   title={`${paper.data.paper_title} - MLRF`}
   description={`Flashcards for ${paper.data.paper_title}`}
+  schemaJson={schemaJson}
 >
   <div class="article-container">
     <div class="paper-header">
