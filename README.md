@@ -16,6 +16,8 @@ These flashcards are not a substitute for reading papers, but a complement to de
 
 | Title | URL | flashcards |
 | ----- | ----- | ---------- |
+| GigaPose: Fast and Robust Novel Object Pose Estimation via One Correspondence | [[`arXiv`](https://arxiv.org/abs/2311.14155)] | [[`gigapose.md`](flashcards/gigapose.md)]|
+| Templates for 3D Object Pose Estimation Revisited: Generalization to New Objects and Robustness to Occlusions | [[`arXiv`](https://arxiv.org/abs/2203.17234)] | [[`templates_for_3d_pose.csv`](flashcards/templates_for_3d_pose.csv)]|
 | 3D Gaussian Splatting for Real-Time Radiance Field Rendering| [[`arXiv`](https://arxiv.org/abs/2308.04079)] | [[`gaussian_splatting.csv`](flashcards/gaussian_splatting.csv)]|
 | A Simple Framework for Contrastive Learning of Visual Representations | [[`arXiv`](https://arxiv.org/abs/2002.05709)] | [[`simclr.csv`](flashcards/simclr.csv)]|
 | Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [[`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
