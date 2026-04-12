@@ -1,10 +1,10 @@
 ---
-paper_title: "AutoSlim: Towards One-Shot Architecture Search for Channel Numbers&nbsp;"
+paper_title: "AutoSlim: Towards One-Shot Architecture Search for Channel Numbers"
 paper_url: https://arxiv.org/abs/1903.11728
 ---
 
 > [!question]
-> What is the main goal of the **AutoSlim **paper (Follow up work on Slimmable Networks)?
+> What is the main goal of the **AutoSlim** paper (Follow up work on Slimmable Networks)?
 
 > [!answer]-
 > AutoSlim proposes a way to **obtain optimized channel configurations under different resource constraints**.

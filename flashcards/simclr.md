@@ -33,14 +33,13 @@ paper_url: https://arxiv.org/abs/2002.05709
 > Which **loss** function is used in **SimCLR**?
 
 > [!answer]-
-> The** loss function** for a **positive pair** of examples $(i, j)$ is defined as:
-> $$\begin{aligned}
-> \mathcal{L}_\text{SimCLR}^{(i,j)} &amp;= - \log\frac{\exp(s(\mathbf{z}_i, \mathbf{z}_j) / \tau)}{\sum_{k=1}^{2N} \mathbb{1}_{[k \neq i]} \exp(s(\mathbf{z}_i, \mathbf{z}_k) / \tau)}
-> \end{aligned}$$where $s(.)$ is the similarity metric (usually cosine similarity).
+> The **loss function** for a **positive pair** of examples $(i, j)$ is defined as:
+> $$\mathcal{L}_\text{SimCLR}^{(i,j)} = - \log\frac{\exp(s(\mathbf{z}_i, \mathbf{z}_j) / \tau)}{\sum_{k=1}^{2N} \mathbb{1}_{[k \neq i]} \exp(s(\mathbf{z}_i, \mathbf{z}_k) / \tau)}$$
+> where $s(.)$ is the similarity metric (usually cosine similarity).
 > The **final loss is computed across all positive pairs**, both $(i,j)$ and $(j,i)$.
 
 > [!explanation]-
-> This loss can be called the** normalized temperature-scaled cross entropy loss** (NT-Xent).
+> This loss can be called the **normalized temperature-scaled cross entropy loss** (NT-Xent).
 > It has been used in prior work.
 
 <!-- guid: NVam[+?`DK -->

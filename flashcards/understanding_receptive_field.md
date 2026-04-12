@@ -1,5 +1,5 @@
 ---
-paper_title: "Understanding the Effective Receptive Field in Deep Convolutional Neural Networks<br>"
+paper_title: "Understanding the Effective Receptive Field in Deep Convolutional Neural Networks"
 paper_url: https://arxiv.org/abs/1701.04128
 ---
 

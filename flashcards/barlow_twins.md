@@ -7,9 +7,12 @@ paper_url: https://arxiv.org/abs/2103.03230
 > What is the **loss** used in **Barlow Twins**?
 
 > [!answer]-
-> $$\begin{aligned}
-> \mathcal{L}_\text{BT} &amp;= \underbrace{\sum_i (1-\mathcal{C}_{ii})^2}_\text{invariance term} + \lambda \underbrace{\sum_i\sum_{i\neq j} \mathcal{C}_{ij}^2}_\text{redundancy reduction term} \\ \text{where } \mathcal{C}_{ij} &amp;= \frac{\sum_b \mathbf{z}^A_{b,i} \mathbf{z}^B_{b,j}}{\sqrt{\sum_b (\mathbf{z}^A_{b,i})^2}\sqrt{\sum_b (\mathbf{z}^B_{b,j})^2}}
-> \end{aligned}$$and $\mathbf{z}$ are the embeddings of the networks and $\lambda$ a positive constant trading off the importance of both terms of the loss.
+> $$\mathcal{L}_\text{BT} = \underbrace{\sum_i (1-\mathcal{C}_{ii})^2}_{\text{invariance term}} + \lambda \underbrace{\sum_i\sum_{i\neq j} \mathcal{C}_{ij}^2}_{\text{redundancy reduction term}}$$
+>
+> where the cross-correlation matrix element is:
+> $$\mathcal{C}_{ij} = \frac{\sum_b \mathbf{z}^A_{b,i} \mathbf{z}^B_{b,j}}{\sqrt{\sum_b (\mathbf{z}^A_{b,i})^2}\sqrt{\sum_b (\mathbf{z}^B_{b,j})^2}}$$
+>
+> Here $\mathbf{z}$ are the embeddings of the networks and $\lambda$ is a positive constant trading off the importance of both terms of the loss.
 
 > [!explanation]-
 > Intuitively, the* invariance term* of the objective, by trying to equate the diagonal elements of the cross-correlation matrix to 1, makes the embedding invariant to the distortions applied. 

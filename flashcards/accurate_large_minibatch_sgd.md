@@ -1,5 +1,5 @@
 ---
-paper_title: "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour<br>"
+paper_title: "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour"
 paper_url: https://arxiv.org/abs/1706.02677
 ---
 

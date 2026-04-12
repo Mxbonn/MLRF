@@ -26,11 +26,12 @@ paper_url: https://arxiv.org/abs/1701.06538
 > However we want a *sparsely* gated MoE where we only evaluate the top-$k$ experts.
 > The sparsity serves to save computations.
 > Thus the MoE layer only keeps the top-$k$ values:
-> $$\begin{aligned}
-> G(x) &amp;= \operatorname{softmax}(\operatorname{KeepTopK}(H(x),k)) \\
-> \operatorname{KeepTopK}(v,k)_i &amp;=\begin{cases} v_i &amp; \text{if }v_i\text{ is in the top }k\text{ elements of }v \\ -\infty &amp; \text{otherwise} \end{cases}
-> \end{aligned}$$and where $H(x)$ is a linear layer with added tunable Guassian noise such that each expert sees enough training data and we avoid favouring only a few experts for all inputs.
-> $$H(x)_i = (xW_g)_i + \epsilon \cdot \operatorname{softplus}((xW_\text{noise})_i ); \quad \epsilon \sim \mathcal{N}(0, \mathbf{1})$$
+> $$G(x) = \operatorname{softmax}(\operatorname{KeepTopK}(H(x),k))$$
+> where the keep-top-$k$ operation is:
+> $$\operatorname{KeepTopK}(v,k)_i = \begin{cases} v_i & \text{if }v_i\text{ is in the top }k\text{ elements of }v \\ -\infty & \text{otherwise} \end{cases}$$
+>
+> Here $H(x)$ is a linear layer with added tunable Gaussian noise such that each expert sees enough training data and we avoid favouring only a few experts for all inputs:
+> $$H(x)_i = (xW_g)_i + \epsilon \cdot \operatorname{softplus}((xW_\text{noise})_i ), \quad \epsilon \sim \mathcal{N}(0, \mathbf{1})$$
 
 <!-- guid: o%Qf%X,,_? -->
 

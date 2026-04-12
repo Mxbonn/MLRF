@@ -16,8 +16,6 @@ These flashcards are not a substitute for reading papers, but a complement to de
 
 | Title | URL | flashcards |
 | ----- | ----- | ---------- |
-| GigaPose: Fast and Robust Novel Object Pose Estimation via One Correspondence | [[`arXiv`](https://arxiv.org/abs/2311.14155)] | [[`gigapose.md`](flashcards/gigapose.md)]|
-| Templates for 3D Object Pose Estimation Revisited: Generalization to New Objects and Robustness to Occlusions | [[`arXiv`](https://arxiv.org/abs/2203.17234)] | [[`templates_for_3d_pose.csv`](flashcards/templates_for_3d_pose.csv)]|
 | 3D Gaussian Splatting for Real-Time Radiance Field Rendering| [[`arXiv`](https://arxiv.org/abs/2308.04079)] | [[`gaussian_splatting.csv`](flashcards/gaussian_splatting.csv)]|
 | A Simple Framework for Contrastive Learning of Visual Representations | [[`arXiv`](https://arxiv.org/abs/2002.05709)] | [[`simclr.csv`](flashcards/simclr.csv)]|
 | Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour| [[`arXiv`](https://arxiv.org/abs/1706.02677)] | [[`accurate_large_minibatch_sgd.csv`](flashcards/accurate_large_minibatch_sgd.csv)]|
@@ -36,6 +34,7 @@ These flashcards are not a substitute for reading papers, but a complement to de
 | Extracting and Composing Robust Features with Denoising Autoencoders | [[`ICML`](http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)] | [[`denoising_autoencoder.csv`](flashcards/denoising_autoencoder.csv)]|
 | FaceNet: A Unified Embedding for Face Recognition and Clustering| [[`arXiv`](https://arxiv.org/abs/1503.03832)] | [[`facenet.csv`](flashcards/facenet.csv)]|
 | Focal Loss for Dense Object Detection | [[`arXiv`](https://arxiv.org/abs/1708.02002)] | [[`retinanet.csv`](flashcards/retinanet.csv)]|
+| GigaPose: Fast and Robust Novel Object Pose Estimation via One Correspondence | [[`arXiv`](https://arxiv.org/abs/2311.14155)] | [[`gigapose.md`](flashcards/gigapose.md)]|
 | High-Resolution Image Synthesis with Latent Diffusion Models | [[`arXiv`](https://arxiv.org/abs/2112.10752)] | [[`stable_diffusion.csv`](flashcards/stable_diffusion.csv)]|
 | Instant Neural Graphics Primitives with a Multiresolution Hash Encoding | [[`arXiv`](https://arxiv.org/abs/2201.05989)] | [[`instant_ngp.csv`](flashcards/instant_ngp.csv)]|
 | Learned Thresholds Token Merging and Pruning for Vision Transformers | [[`arXiv`](https://arxiv.org/abs/2307.10780)] | [[`ltmp.csv`](flashcards/ltmp.csv)]|
@@ -61,6 +60,7 @@ These flashcards are not a substitute for reading papers, but a complement to de
 | Slimmable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1812.08928)] | [[`slimmable_neural_networks.csv`](flashcards/slimmable_neural_networks.csv)]|
 | Squeeze and Excitation Networks| [[`arXiv`](https://arxiv.org/abs/1709.01507)] | [[`squeeze_and_excitation.csv`](flashcards/squeeze_and_excitation.csv)]|
 | Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity | [[`arXiv`](https://arxiv.org/abs/2101.03961)] | [[`switch_transformer.csv`](flashcards/switch_transformer.csv)]|
+| Templates for 3D Object Pose Estimation Revisited: Generalization to New Objects and Robustness to Occlusions | [[`arXiv`](https://arxiv.org/abs/2203.17234)] | [[`templates_for_3d_pose.csv`](flashcards/templates_for_3d_pose.csv)]|
 | The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks | [[`arXiv`](https://arxiv.org/abs/1803.03635)] | [[`lottery_ticket.csv`](flashcards/lottery_ticket.csv)]|
 | Token Merging: Your ViT But Faster | [[`arXiv`](https://arxiv.org/abs/2210.09461)] | [[`tome.csv`](flashcards/tome.csv)]|
 | Understanding the Effective Receptive Field in Deep Convolutional Neural Networks | [[`arXiv`](https://arxiv.org/abs/1701.04128)] | [[`understanding_receptive_field.csv`](flashcards/understanding_receptive_field.csv)]|

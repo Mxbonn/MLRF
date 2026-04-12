@@ -47,7 +47,7 @@ paper_url: https://arxiv.org/abs/2210.09461
 > What schedule does **Token Merging** use to merge tokens?
 
 > [!answer]-
-> The default setting merges a **fixed **$k$ tokens per layer. 
+> The default setting merges a **fixed** $k$ tokens per layer. 
 > They also report on a linearly decreasing schedule.
 
 <!-- guid: j+k)D&~x:} -->

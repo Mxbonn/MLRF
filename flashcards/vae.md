@@ -22,18 +22,22 @@ paper_url: https://arxiv.org/abs/1312.6114
 > **Derive** the **ELBO** loss function used for **variational inference**.
 
 > [!answer]-
-> The goal in variational inference is to **minimize** $D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) | p_\theta(\mathbf{z}\vert\mathbf{x}) )$ with respect to $\phi$:
-> $$\begin{aligned}
-> &amp; D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}\vert\mathbf{x}) ) &amp; \\
-> &amp;=\int q_\phi(\mathbf{z} \vert \mathbf{x}) \log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z} \vert \mathbf{x})} d\mathbf{z} &amp; \\
-> &amp;=\int q_\phi(\mathbf{z} \vert \mathbf{x}) \log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})p_\theta(\mathbf{x})}{p_\theta(\mathbf{z}, \mathbf{x})} d\mathbf{z} &amp; \scriptstyle{\text{; Because }p(z \vert x) = p(z, x) / p(x)} \\
-> &amp;=\int q_\phi(\mathbf{z} \vert \mathbf{x}) \big( \log p_\theta(\mathbf{x}) + \log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z}, \mathbf{x})} \big) d\mathbf{z} &amp; \\
-> &amp;=\log p_\theta(\mathbf{x}) + \int q_\phi(\mathbf{z} \vert \mathbf{x})\log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z}, \mathbf{x})} d\mathbf{z} &amp; \scriptstyle{\text{; Because }\int q(z \vert x) dz = 1}\\
-> &amp;=\log p_\theta(\mathbf{x}) + \int q_\phi(\mathbf{z} \vert \mathbf{x})\log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{x}\vert\mathbf{z})p_\theta(\mathbf{z})} d\mathbf{z} &amp; \scriptstyle{\text{; Because }p(z, x) = p(x \vert z) p(z)} \\
-> &amp;=\log p_\theta(\mathbf{x}) + \mathbb{E}_{\mathbf{z}\sim q_\phi(\mathbf{z} \vert \mathbf{x})}[\log \frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z})} - \log p_\theta(\mathbf{x} \vert \mathbf{z})] &amp;\\
-> &amp;=\log p_\theta(\mathbf{x}) + D_\text{KL}(q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z})) - \mathbb{E}_{\mathbf{z}\sim q_\phi(\mathbf{z}\vert\mathbf{x})}\log p_\theta(\mathbf{x}\vert\mathbf{z}) &amp;
-> \end{aligned}$$So we have:
-> $$D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}\vert\mathbf{x}) ) =\log p_\theta(\mathbf{x}) + D_\text{KL}(q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z})) - \mathbb{E}_{\mathbf{z}\sim q_\phi(\mathbf{z}\vert\mathbf{x})}\log p_\theta(\mathbf{x}\vert\mathbf{z})$$
+> The goal in variational inference is to **minimize** $D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) | p_\theta(\mathbf{z}\vert\mathbf{x}) )$ with respect to $\phi$.
+>
+> Starting from the definition and expanding step-by-step:
+> $$D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}\vert\mathbf{x}) ) = \int q_\phi(\mathbf{z} \vert \mathbf{x}) \log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z} \vert \mathbf{x})} d\mathbf{z}$$
+>
+> Using $p(z \vert x) = p(z, x) / p(x)$:
+> $$= \int q_\phi(\mathbf{z} \vert \mathbf{x}) \log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})p_\theta(\mathbf{x})}{p_\theta(\mathbf{z}, \mathbf{x})} d\mathbf{z}$$
+>
+> Expanding the logarithm:
+> $$= \log p_\theta(\mathbf{x}) + \int q_\phi(\mathbf{z} \vert \mathbf{x})\log\frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z}, \mathbf{x})} d\mathbf{z}$$
+>
+> Using $p(z, x) = p(x \vert z) p(z)$:
+> $$= \log p_\theta(\mathbf{x}) + \mathbb{E}_{\mathbf{z}\sim q_\phi(\mathbf{z} \vert \mathbf{x})}\left[\log \frac{q_\phi(\mathbf{z} \vert \mathbf{x})}{p_\theta(\mathbf{z})} - \log p_\theta(\mathbf{x} \vert \mathbf{z})\right]$$
+>
+> Therefore:
+> $$D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}\vert\mathbf{x}) ) = \log p_\theta(\mathbf{x}) + D_\text{KL}(q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z})) - \mathbb{E}_{\mathbf{z}\sim q_\phi(\mathbf{z}\vert\mathbf{x})}\log p_\theta(\mathbf{x}\vert\mathbf{z})$$
 >
 > Once rearrange the left and right hand side of the equation,
 >
@@ -43,12 +47,13 @@ paper_url: https://arxiv.org/abs/1312.6114
 >
 > The negation of the above defines our **loss function**:
 >
-> $$\begin{aligned}
-> L_\text{VAE}(\theta, \phi) 
-> &amp;= -\log p_\theta(\mathbf{x}) + D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}\vert\mathbf{x}) )\\
-> &amp;= - \mathbb{E}_{\mathbf{z} \sim q_\phi(\mathbf{z}\vert\mathbf{x})} \log p_\theta(\mathbf{x}\vert\mathbf{z}) + D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}) ) \\
-> \theta^{*}, \phi^{*} &amp;= \arg\min_{\theta, \phi} L_\text{VAE}
-> \end{aligned}$$
+> $$L_\text{VAE}(\theta, \phi) = -\log p_\theta(\mathbf{x}) + D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}\vert\mathbf{x}) )$$
+>
+> Which can also be written as:
+> $$L_\text{VAE}(\theta, \phi) = - \mathbb{E}_{\mathbf{z} \sim q_\phi(\mathbf{z}\vert\mathbf{x})} \log p_\theta(\mathbf{x}\vert\mathbf{z}) + D_\text{KL}( q_\phi(\mathbf{z}\vert\mathbf{x}) \| p_\theta(\mathbf{z}) )$$
+>
+> Optimal parameters are found by:
+> $$\theta^{*}, \phi^{*} = \arg\min_{\theta, \phi} L_\text{VAE}$$
 
 > [!explanation]-
 > ![[VAE-graphical-model.png]]
@@ -65,10 +70,11 @@ paper_url: https://arxiv.org/abs/1312.6114
 > [!answer]-
 > KL divergence is not a symmetric distance function, i.e. $D_\text{KL}(q_\phi | p_\theta) \ne D_\text{KL}(p_\theta | q_\phi)$.
 > Let's **consider the forward KL divergence**:
-> $$\begin{align*} D_\text{KL}(p | q) &amp; = \sum_z p(z) \log \frac{p(z)}{q(z)} \\ &amp; = \mathbb{E}_{p(z)}{\big[\log \frac{p(z)}{q(z)}\big]}\\ \end{align*}$$This means that we need to ensure that $q(z) &gt; 0$ wherever $p(z) &gt; 0$. The optimized variational distribution $Q(Z)$ is known as **zero-avoiding**.
+> $$D_\text{KL}(p | q) = \sum_z p(z) \log \frac{p(z)}{q(z)} = \mathbb{E}_{p(z)}{\big[\log \frac{p(z)}{q(z)}\big]}$$
+> This means that we need to ensure that $q(z) > 0$ wherever $p(z) > 0$. The optimized variational distribution $Q(Z)$ is known as **zero-avoiding**.
 > ![[forward-KL.png]]
 > The reversed KL divergence has the opposite behaviour.
-> $$\begin{align*} D_\text{KL}(q | p) &amp; = \sum_z q(z) \log \frac{q(z)}{p(z)} \\ &amp; = \mathbb{E}_{q(z)}{\big[\log \frac{q(z)}{p(z)}\big]}\\ \end{align*}$$
+> $$D_\text{KL}(q | p) = \sum_z q(z) \log \frac{q(z)}{p(z)} = \mathbb{E}_{q(z)}{\big[\log \frac{q(z)}{p(z)}\big]}$$
 > If $p(z) = 0$, we must ensure that $q(z) = 0$, othewise the KL divergence blows up. This is known as **zero-forcing**.
 > ![[reverse-KL.png]]
 
@@ -89,10 +95,9 @@ paper_url: https://arxiv.org/abs/1312.6114
 > **It is often possible to express the random variable $\mathbf{z}$ as a deterministic variable $\mathbf{z} = \mathcal{T}_\phi(\mathbf{x}, \boldsymbol{\epsilon})$, where $\epsilon$ is an auxiliary independent random variable and the transformation function $\mathcal{T}_\phi$ converts $\boldsymbol{\epsilon}$ to $\mathbf{z}$.
 >
 > For example, a common choice of the form of $q_\phi(\mathbf{z}\vert\mathbf{x})$ is a multivariate Gaussian with a diagonal covariance structure:
-> $$\begin{aligned}
-> \mathbf{z} &amp;\sim q_\phi(\mathbf{z}\vert\mathbf{x}^{(i)}) = \mathcal{N}(\mathbf{z}; \boldsymbol{\mu}^{(i)}, \boldsymbol{\sigma}^{2(i)}\boldsymbol{I}) &amp; \\
-> \mathbf{z} &amp;= \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon} \text{, where } \boldsymbol{\epsilon} \sim \mathcal{N}(0, \boldsymbol{I}) &amp; \scriptstyle{\text{; Reparameterization trick.}}
-> \end{aligned}$$
+> $$\mathbf{z} \sim q_\phi(\mathbf{z}\vert\mathbf{x}^{(i)}) = \mathcal{N}(\mathbf{z}; \boldsymbol{\mu}^{(i)}, \boldsymbol{\sigma}^{2(i)}\boldsymbol{I})$$
+> Using the reparameterization trick:
+> $$\mathbf{z} = \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon} \text{, where } \boldsymbol{\epsilon} \sim \mathcal{N}(0, \boldsymbol{I})$$
 > ![[reparameterization-trick.png]]
 
 > [!explanation]-

@@ -12,17 +12,17 @@ paper_url: https://arxiv.org/abs/2112.10752
 > The diffusion and denoising processes happen on the latent vector $\mathbf{z}$.
 > The denoising model is a **time-conditioned U-Net**, augmented with the **cross-attention mechanism to handle flexible conditioning** information for image generation.
 > To process $y$ from various modalities, a domain specific encoder $\tau_\theta$ that projects $y$ to an intermediate representation $\tau_\theta(y) \in \mathbb{R}^{M \times d_\tau}$ is used.
-> $$\begin{aligned}
-> &amp;\text{Attention}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \text{softmax}\Big(\frac{\mathbf{Q}\mathbf{K}^\top}{\sqrt{d}}\Big) \cdot \mathbf{V} \\
-> &amp;\text{where }\mathbf{Q} = \mathbf{W}^{(i)}_Q \cdot \varphi_i(\mathbf{z}_i),\;
-> \mathbf{K} = \mathbf{W}^{(i)}_K \cdot \tau_\theta(y),\;
-> \mathbf{V} = \mathbf{W}^{(i)}_V \cdot \tau_\theta(y) \\
-> &amp;\text{and }
-> \mathbf{W}^{(i)}_Q \in \mathbb{R}^{d \times d^i_\epsilon},\;
-> \mathbf{W}^{(i)}_K, \mathbf{W}^{(i)}_V \in \mathbb{R}^{d \times d_\tau},\;
-> \varphi_i(\mathbf{z}_i) \in \mathbb{R}^{N \times d^i_\epsilon},\;
-> \tau_\theta(y) \in \mathbb{R}^{M \times d_\tau}
-> \end{aligned}$$Where $\varphi(\mathbf{z}_i) \in \mathbb{R}^{N \times d_\epsilon^i}$ denotes a (flattened) intermediate representation of the UNet implementation $\epsilon_\theta$.
+>
+> The cross-attention mechanism is defined as:
+> $$\text{Attention}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \text{softmax}\Big(\frac{\mathbf{Q}\mathbf{K}^\top}{\sqrt{d}}\Big) \cdot \mathbf{V}$$
+>
+> where the projections are:
+> $$\mathbf{Q} = \mathbf{W}^{(i)}_Q \cdot \varphi_i(\mathbf{z}_i), \quad \mathbf{K} = \mathbf{W}^{(i)}_K \cdot \tau_\theta(y), \quad \mathbf{V} = \mathbf{W}^{(i)}_V \cdot \tau_\theta(y)$$
+>
+> with dimensions:
+> $$\mathbf{W}^{(i)}_Q \in \mathbb{R}^{d \times d^i_\epsilon}, \quad \mathbf{W}^{(i)}_K, \mathbf{W}^{(i)}_V \in \mathbb{R}^{d \times d_\tau}, \quad \varphi_i(\mathbf{z}_i) \in \mathbb{R}^{N \times d^i_\epsilon}, \quad \tau_\theta(y) \in \mathbb{R}^{M \times d_\tau}$$
+>
+> where $\varphi(\mathbf{z}_i) \in \mathbb{R}^{N \times d_\epsilon^i}$ denotes a (flattened) intermediate representation of the UNet implementation $\epsilon_\theta$.
 
 <!-- guid: %%Q3*A3`H -->
 

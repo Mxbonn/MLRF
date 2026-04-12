@@ -4,7 +4,7 @@ paper_url: https://arxiv.org/abs/2304.02643
 ---
 
 > [!question]
-> How long did it take to train** **the **Segment Anything** model?
+> How long did it take to train the **Segment Anything** model?
 
 > [!answer]-
 > SAM was trained on 256 A100 GPUS for 68 hours. (This is equal to 725 A100 GPU-days)
@@ -61,11 +61,10 @@ paper_url: https://arxiv.org/abs/2304.02643
 > Each decoder layer performs 4 steps: 
 > **(1) self-attention on the tokens**, **(2) cross-attention** from tokens (as queries) to the image embedding, **(3) a point-wise MLP** updates each token, and **(4) cross-attention** from the image embedding (as queries) to tokens. 
 > This last step updates the image embedding with prompt information. During cross-attention, the image embedding is treated as a set of $64^2$ 256-dimensional vectors. Each self/cross-attention and MLP has a residual connection, layer normalization, and a dropout of 0.1 at training. The next decoder layer takes the updated tokens and the updated image embedding from the previous layer. 
-> They use a **two-layer decoder**. To ensure the decoder has access to critical geometric information the <u>positional encodings are added to the image embedding whenever they participate in an attention layer</u>. Additionally, **the entire original prompt tokens (including
-> their positional encodings) are re-added to the updated tokens whenever they participate in an attention layer**. This allows for a strong dependence on both the prompt token’s geometric location and type.
+> They use a **two-layer decoder**. To ensure the decoder has access to critical geometric information the <u>positional encodings are added to the image embedding whenever they participate in an attention layer</u>. Additionally, **the entire original prompt tokens (including their positional encodings) are re-added to the updated tokens whenever they participate in an attention layer**. This allows for a strong dependence on both the prompt token’s geometric location and type.
 >
 > **After the decoder, we upsample** the updated image embedding by 4x with two transposed convolutional layers.
-> Then, the** tokens attend once more to the image embedding** and we pass the updated **output token embedding to a small 3-layer MLP** that outputs a vector matching the channel dimension of the upscaled image embedding. Finally, we **predict a mask with a spatially point-wise product between the upscaled image embedding and the MLP’s output**.
+> Then, the **tokens attend once more to the image embedding** and we pass the updated **output token embedding to a small 3-layer MLP** that outputs a vector matching the channel dimension of the upscaled image embedding. Finally, we **predict a mask with a spatially point-wise product between the upscaled image embedding and the MLP’s output**.
 > The transformer uses an embedding dimension of 256.
 > The transformer MLP blocks have a large internal dimension of 2048, but the MLP is applied only to the prompt tokens for which there are relatively few (rarely greater than 20). However, in cross-attention layers where we have a $64 \times 64$ image embedding, we reduce the channel dimension of the queries, keys, and values by $2 \times$ to 128 for computational efficiency. All attention layers use 8 heads. The transposed convolutions used to upscale the output image embedding are $2 \times 2$, stride 2 with output channel dimensions of 64 and 32 and have GELU activations. They are separated by layer normalization.
 
@@ -78,8 +77,8 @@ paper_url: https://arxiv.org/abs/2304.02643
 
 > [!answer]-
 > Sparse (i.e. not the mask) **prompts are mapped to 256-dimensional vectorial embeddings** as follows. 
-> **A point **is represented as the **sum of a positional encoding of the point’s location and one of two learned embeddings** that indicate if the point is either in the foreground or background.
-> **A box **is represented by an embedding pair: (1) the **positional encoding of its top-left corner** summed with a **learned embedding** representing “top-left corner” and (2) the same structure but using a learned embedding indicating “bottom-right corner”. 
+> **A point** is represented as the **sum of a positional encoding of the point’s location and one of two learned embeddings** that indicate if the point is either in the foreground or background.
+> **A box** is represented by an embedding pair: (1) the **positional encoding of its top-left corner** summed with a **learned embedding** representing “top-left corner” and (2) the same structure but using a learned embedding indicating “bottom-right corner”. 
 > **For text** we use the text encoder from **CLIP**.
 >
 > **Dense prompts (i.e., masks)** have a spatial correspondence with the image. They input masks at a $4 \times$ lower resolution than the input image, then **downscale** an additional $4 \times$ using two $2 \times 2$, stride-2 convolutions with output channels 4 and 16, respectively. A final $1 \times 1$ convolution maps the channel dimension to 256. Each layer is separated by GELU activations and layer normalization.
@@ -105,7 +104,7 @@ paper_url: https://arxiv.org/abs/2304.02643
 > Which **losses** were used to train **Segment Anything**?
 
 > [!answer]-
-> A linear combination of **focal loss** and **dice loss **in a 20:1 ratio of focal loss to dice loss.
+> A linear combination of **focal loss** and **dice loss** in a 20:1 ratio of focal loss to dice loss.
 
 <!-- guid: IqXIh{Om/s -->
 
