@@ -91,8 +91,8 @@ paper_url: https://arxiv.org/abs/1312.6114
 > [!answer]-
 > Variational autoencoders sample from $\mathbf{z} \sim q_\phi(\mathbf{z}\vert\mathbf{x})$.
 > Sampling is a stochastic process and therefore we **cannot backpropagate through it**.
-> **To make it differentiable, the reparameterization trick is introduced.
-> **It is often possible to express the random variable $\mathbf{z}$ as a deterministic variable $\mathbf{z} = \mathcal{T}_\phi(\mathbf{x}, \boldsymbol{\epsilon})$, where $\epsilon$ is an auxiliary independent random variable and the transformation function $\mathcal{T}_\phi$ converts $\boldsymbol{\epsilon}$ to $\mathbf{z}$.
+> To make it differentiable, the reparameterization trick is introduced.
+> It is often possible to express the random variable $\mathbf{z}$ as a deterministic variable $\mathbf{z} = \mathcal{T}_\phi(\mathbf{x}, \boldsymbol{\epsilon})$, where $\epsilon$ is an auxiliary independent random variable and the transformation function $\mathcal{T}_\phi$ converts $\boldsymbol{\epsilon}$ to $\mathbf{z}$.
 >
 > For example, a common choice of the form of $q_\phi(\mathbf{z}\vert\mathbf{x})$ is a multivariate Gaussian with a diagonal covariance structure:
 > $$\mathbf{z} \sim q_\phi(\mathbf{z}\vert\mathbf{x}^{(i)}) = \mathcal{N}(\mathbf{z}; \boldsymbol{\mu}^{(i)}, \boldsymbol{\sigma}^{2(i)}\boldsymbol{I})$$

@@ -47,7 +47,7 @@ paper_url: https://arxiv.org/abs/1801.04381
 ---
 
 > [!question]
-> What is the reason **RELU6 **is used in **MobileNetV2**?
+> What is the reason **RELU6** is used in **MobileNetV2**?
 
 > [!answer]-
 > Because of its robustness when used with low-precision computation
@@ -57,7 +57,7 @@ paper_url: https://arxiv.org/abs/1801.04381
 ---
 
 > [!question]
-> How many multiply-adds and parameters does the default **MobileNetV2 **have? And how much accuracy does it get on ImageNet?
+> How many multiply-adds and parameters does the default **MobileNetV2** have? And how much accuracy does it get on ImageNet?
 
 > [!answer]-
 > **300M MAdds** and **3.4M parameters**, with an accuracy of **72%** on ImageNet.
@@ -77,7 +77,7 @@ paper_url: https://arxiv.org/abs/1801.04381
 ---
 
 > [!question]
-> What does the main** building block** of **MobileNetv2 **look like:
+> What does the main **building block** of **MobileNetv2** look like:
 
 > [!answer]-
 > The linear bottleneck with inverted residuals block:

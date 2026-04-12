@@ -4,7 +4,7 @@ paper_url: https://arxiv.org/abs/1708.02002
 ---
 
 > [!question]
-> What is according to the **RetinaNet **paper the **main obstacle for one-stage detectors** to achieve state-of-the-art accuracy?
+> What is according to the **RetinaNet** paper the **main obstacle for one-stage detectors** to achieve state-of-the-art accuracy?
 
 > [!answer]-
 > **Class imbalance** during training.
@@ -17,7 +17,7 @@ paper_url: https://arxiv.org/abs/1708.02002
 ---
 
 > [!question]
-> How is **class imbalance** an issue for object detectors and how does **SSD **solve this issue compared to **RetinaNet**?
+> How is **class imbalance** an issue for object detectors and how does **SSD** solve this issue compared to **RetinaNet**?
 
 > [!answer]-
 > One-stage object detectors evaluate $10^4-10^5$ candidate locations per image but only a few locations contain objects. This imbalance causes two problems: 
@@ -34,17 +34,16 @@ paper_url: https://arxiv.org/abs/1708.02002
 > Give the mathematical definition for the **Focal Loss**.
 
 > [!answer]-
-> **$$FL(p_t) = -(1 - p_t)^{\gamma} log(p_t)$$
-> **with $\gamma \ge 0$ a tunable *focusing* parameter and where 
+> **$$FL(p_t) = -(1 - p_t)^{\gamma} log(p_t)$$**
+> with $\gamma \ge 0$ a tunable *focusing* parameter and where 
 > $$ p_t = \begin{cases} p &amp; \text{if } y = 1 \\
 > 1 - p &amp; \text{if } y = 0 \end{cases} $$
 > with $p \in [0,1]$ the model's estimated probability for the class with label $y=1$
 
 > [!explanation]-
 > In practice we use an $\alpha$-balanced variant of the focal loss:
-> **$$FL(p_t) = -\alpha_t(1 - p_t)^{\gamma} log(p_t)$$
-> **![[paste-556541a621df1e615336ac514face4107ed4166b.jpg]]**
-> **
+> **$$FL(p_t) = -\alpha_t(1 - p_t)^{\gamma} log(p_t)$$**
+> ![[paste-556541a621df1e615336ac514face4107ed4166b.jpg]]
 
 <!-- guid: QG?M|;Vez0 -->
 
@@ -80,9 +79,9 @@ paper_url: https://arxiv.org/abs/1708.02002
 
 > [!answer]-
 > ![[paste-cb15da58ea668d1da71d7664f4000f56c141deeb.jpg]]
-> RetinaNet is a **one-stage object detector** with **ResNet **as backbone, a feature pyramid network (**FPN**) as neck and head that is **shared **for all feature layers.
+> RetinaNet is a **one-stage object detector** with **ResNet** as backbone, a feature pyramid network (**FPN**) as neck and head that is **shared **for all feature layers.
 
 > [!explanation]-
-> RetinaNet follows the **one-stage** **object detection** architecture, the main innovation of RetinaNet was the **loss function**.
+> RetinaNet follows the **one-stage object detection** architecture, the main innovation of RetinaNet was the **loss function**.
 
 <!-- guid: e$g#+#_Fyo -->

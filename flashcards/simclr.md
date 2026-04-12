@@ -21,8 +21,8 @@ paper_url: https://arxiv.org/abs/2002.05709
 > Which **similarity metric** is used in **SimCLR**?
 
 > [!answer]-
-> **Cosine similarity
-> **This can be represented by using a dot product and scaling by the magnitudes.
+> **Cosine similarity**
+> This can be represented by using a dot product and scaling by the magnitudes.
 > $$s(\mathbf{u}, \mathbf{v}) = \frac{\mathbf{u}^T\mathbf{v}}{\|u\| \|v\|}$$
 
 <!-- guid: ra_/Ps?d3} -->

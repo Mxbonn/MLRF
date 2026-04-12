@@ -7,7 +7,7 @@ paper_url: https://arxiv.org/abs/2202.09368
 > What new approach to MoE does **Mixture-of-Experts with Expert Choice Routing** introduce?
 
 > [!answer]-
-> Expert Choice introduces a Mixture-of-Experts where** instead of letting tokens select the top-$k$ experts, the experts select the top-$k$ tokens**.
+> Expert Choice introduces a Mixture-of-Experts where **instead of letting tokens select the top-$k$ experts, the experts select the top-$k$ tokens**.
 > ![[paste-52b754c81bc1dec5d0bb509a4a62f1861f4611cb.jpg]]
 
 <!-- guid: LXL>a6)~VV -->

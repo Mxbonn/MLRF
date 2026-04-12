@@ -1,5 +1,5 @@
 ---
-paper_title: "Once-for-All: Train One Network and Specialize it for Efficient Deployment<br>"
+paper_title: "Once-for-All: Train One Network and Specialize it for Efficient Deployment"
 paper_url: https://arxiv.org/abs/1908.09791
 ---
 
@@ -20,7 +20,7 @@ paper_url: https://arxiv.org/abs/1908.09791
 > Which dimensions are scalable in a **once-for-all network**?
 
 > [!answer]-
-> The **depth, width, kernel size, **and **resolution**.
+> The **depth, width, kernel size,** and **resolution**.
 
 > [!explanation]-
 > An OFA network is constructed by  dividing a CNN model into a sequence of units with gradually reduced feature map size and increased channel numbers.
@@ -36,7 +36,7 @@ paper_url: https://arxiv.org/abs/1908.09791
 > How is a **once-for-all** network **trained?**
 
 > [!answer]-
-> By using a **progessive shrinking **training scheme.
+> By using a **progessive shrinking** training scheme.
 > Start with training the largest neural network with the maximum kernel size (e.g., 7), depth (e.g., 4), and width (e.g., 6). Next, progressively fine-tune the network to support smaller sub-networks by gradually adding them into the sampling space (larger sub-networks may also be sampled). 
 >
 > Specifically, after training the largest network, first support elastic kernel size, while the depth and width remain the maximum values. Then, support elastic depth and elastic width sequentially. The resolution is elastic throughout the whole training process, which is implemented by sampling different image sizes for each batch of training data. We also use the **knowledge distillation** technique after training the largest neural network. It combines two loss terms using both the soft labels given by the largest neural network and the real labels.
@@ -63,7 +63,7 @@ paper_url: https://arxiv.org/abs/1908.09791
 > Starting from a **once-for-all network**, how do you select a specialized sub-network for a given deployment scenario?
 
 > [!answer]-
-> Apart from the OFA network, you also need to construct** an accuracy predictor** (a small MLP trained on 16K sub-networks and their accuracy measured over 10K validation images) and a **latency lookup table**.
+> Apart from the OFA network, you also need to construct **an accuracy predictor** (a small MLP trained on 16K sub-networks and their accuracy measured over 10K validation images) and a **latency lookup table**.
 > Given the target hardware and latency constraint, you conduct an **evolutionary search** to get the specialized sub-networks.
 >
 > ![[paste-8daf65321c6185ed884b64102155e2e06565132a.jpg]]
@@ -92,9 +92,9 @@ paper_url: https://arxiv.org/abs/1908.09791
 > How does **Elastic Kernel Size** work in **once-for-all networks**?
 
 > [!answer]-
-> **The center of a $7 \times 7$ convolution kernel also serves as a 5x5 kernel, the center of which also serves to be a 3x3 kernel. **
+> **The center of a $7 \times 7$ convolution kernel also serves as a 5x5 kernel, the center of which also serves to be a 3x3 kernel.**
 >
-> The weights of centered sub-kernels may need to have different distribution or magnitude for different roles. <u>Forcing them to be the same degrades the performance of some sub-networks. </u>Therefore, we introduce **kernel transformation matrices **when sharing the kernel weights. We use **separate kernel transformation matrices for different layers**. Within each layer, the kernel transformation matrices are **shared among different channels**. As such, we only need $25 \times 25 + 9 \times 9 = 706$ extra parameters to store the kernel transformation matrices in each layer.
+> The weights of centered sub-kernels may need to have different distribution or magnitude for different roles. <u>Forcing them to be the same degrades the performance of some sub-networks. </u>Therefore, we introduce **kernel transformation matrices** when sharing the kernel weights. We use **separate kernel transformation matrices for different layers**. Within each layer, the kernel transformation matrices are **shared among different channels**. As such, we only need $25 \times 25 + 9 \times 9 = 706$ extra parameters to store the kernel transformation matrices in each layer.
 >
 > ![[paste-a89e3a046d5bc158425199e8f62ad8ad3eb5bd3f.jpg]]
 
@@ -106,7 +106,7 @@ paper_url: https://arxiv.org/abs/1908.09791
 > How does **Elastic Depth** work in **once-for-all networks**?
 
 > [!answer]-
-> To derive a sub-network that has D layers in a unit that originally has N layers, we** keep the first D layers and skip the last N −D layers**.
+> To derive a sub-network that has D layers in a unit that originally has N layers, we **keep the first D layers and skip the last N −D layers**.
 
 <!-- guid: ta/{tZ4IEE -->
 
@@ -127,7 +127,7 @@ paper_url: https://arxiv.org/abs/1908.09791
 ---
 
 > [!question]
-> How does **Elastic Resolution **work in **once-for-all networks**?
+> How does **Elastic Resolution** work in **once-for-all networks**?
 
 > [!answer]-
 > The resolution is **elastic throughout the whole training process**, which is implemented by sampling different image sizes for each batch of training data.

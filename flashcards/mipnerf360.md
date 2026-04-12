@@ -8,7 +8,7 @@ paper_url: https://arxiv.org/abs/2111.12077
 
 > [!answer]-
 > 1. (mip)-NeRF struggles with **unbounded scenes,** mip-NeRF 360 reparameterizes the scenes such that they lay in a bounded space.
-> 2. (mip)-NeRF training requires** many iterations** and is **expensive,** mip-NeRF 360 introduces online distillation.
+> 2. (mip)-NeRF training requires **many iterations** and is **expensive,** mip-NeRF 360 introduces online distillation.
 > 3. (mip)-NeRF has **artifacts** in large scenes due to **ambiguity** due to few samples per observation, mip-NeRF 360 adds specific regularization to fix this.
 
 <!-- guid: Lx=A<Dp<ae -->
@@ -50,7 +50,7 @@ paper_url: https://arxiv.org/abs/2111.12077
 > How are the rays sampled in mip-NeRF 360?
 
 > [!answer]-
-> They are sampled **linearly **in *inverse depth* (**disparity**).
+> They are sampled **linearly** in *inverse depth* (**disparity**).
 
 > [!explanation]-
 > More details in the paper.
@@ -68,7 +68,7 @@ paper_url: https://arxiv.org/abs/2111.12077
 > ![[crop1.png]]
 
 > [!explanation]-
-> While ***mip-NeRF *uses one multi-scale MLP** that is repeatedly queried (only two repetitions shown here) for weights that are resampled into intervals for the next stage, and supervises the renderings produced at all scales. ***mip-NeRF 360* use a *proposal* MLP** that emits weights (but not color) that are resampled, and in the final stage we use a ***NeRF MLP* to produce weights and colors** that result in the rendered image, which we supervise. The proposal MLP is trained to produce proposal weights $\mathbf{\hat{w}}$ that are consistent with the NeRF MLP’s $\mathbf{w}$ output. By using a small proposal MLP and a large NeRF MLP we obtain a combined model with a high capacity that is still tractable to train
+> While **mip-NeRF** uses one multi-scale MLP that is repeatedly queried (only two repetitions shown here) for weights that are resampled into intervals for the next stage, and supervises the renderings produced at all scales. **mip-NeRF 360 use a *proposal* MLP** that emits weights (but not color) that are resampled, and in the final stage we use a **<u>NeRF MLP</u> to produce weights and colors** that result in the rendered image, which we supervise. The proposal MLP is trained to produce proposal weights $\mathbf{\hat{w}}$ that are consistent with the NeRF MLP’s $\mathbf{w}$ output. By using a small proposal MLP and a large NeRF MLP we obtain a combined model with a high capacity that is still tractable to train
 
 <!-- guid: FeTLzd`iCx -->
 
@@ -118,10 +118,7 @@ paper_url: https://arxiv.org/abs/2111.12077
 > [!explanation]-
 > Though $\mathcal{L}_{\text{dist}}$ is straightforward to define, it is non-trivial to compute.
 > But because $\mathbf{w}_\mathbf{s}(\cdot)$ has a constant value within each interval we can rewrite it as:
-> $$\begin{align}
-> \mathcal{L}_{\text{dist}}(\mathbf{s}, \mathbf{w}) &amp;=
-> \sum_{i,j} w_{i} w_{j} \left| \frac{s_{i} +s_{i+1}}{2} - \frac{s_{j} + s_{j+1}}{2} \right| \nonumber \\
-> &amp;+ \frac{1}{3}\sum _{i} w_{i}^{2}( s_{i+1} - s_{i}) 
-> \end{align}$$
+>
+> $$\mathcal{L}_{\text{dist}}(\mathbf{s}, \mathbf{w}) = \sum_{i,j} w_{i} w_{j} \left| \frac{s_{i} +s_{i+1}}{2} - \frac{s_{j} + s_{j+1}}{2} \right| + \frac{1}{3}\sum _{i} w_{i}^{2}( s_{i+1} - s_{i})$$
 
 <!-- guid: PgwFx+D-< -->

@@ -89,7 +89,6 @@ paper_url: https://arxiv.org/abs/2003.08934
 > In **NeRF**, what is the formula for $\hat{C}(\mathbf{r})$ , the estimated version of $C(\mathbf{r})$?
 
 > [!answer]-
-> $$\hat{C}(\mathbf{r})=\sum_{i=1}^{N}T_i (1-\operatorname{exp}({-\sigma_i \delta_i}) )\mathbf{c}_i, \textrm{ where }
-> T_i=\operatorname{exp}({- \sum_{j=1}^{i-1} \sigma_j \delta_j})$$and where $\delta_i = t_{i+1} - t_i$ is the distance between adjacent samples.
+> $$\hat{C}(\mathbf{r})=\sum_{i=1}^{N}T_i (1-\operatorname{exp}({-\sigma_i \delta_i}) )\mathbf{c}_i, \textrm{ where } T_i=\operatorname{exp}({- \sum_{j=1}^{i-1} \sigma_j \delta_j})$$ and where $\delta_i = t_{i+1} - t_i$ is the distance between adjacent samples.
 
 <!-- guid: Zgy/SS(A[ -->

@@ -8,7 +8,7 @@ paper_url: https://arxiv.org/abs/1701.06538
 
 > [!answer]-
 > ![[moe.png]]
-> The Mixture-of-Experts layer consists of *$n$ experts* (simple feed forward layers in the original paper) and a *gating network $G$ *whose output is a sparse $n$ dimensional vector.
+> The Mixture-of-Experts layer consists of *$n$ experts* (simple feed forward layers in the original paper) and a *gating network $G$* whose output is a sparse $n$ dimensional vector.
 >
 > Let us denote by $G(x)$ and $E_i(x)$ the output of the gating network and the output of the $i$-th expert network for a given input $x$. The output $y$ of the MoE module can be written as follows:
 > $$y = \sum_{i=1}^n G(x)_iE_i(x)$$We save computation based on the sparsity of the output of $G(x)$.
@@ -51,7 +51,7 @@ paper_url: https://arxiv.org/abs/1701.06538
 ---
 
 > [!question]
-> How does the Sparsely-Gated **MoE** paper **avoid** the **gating network $G$ **to **always favor the same** few strong experts?
+> How does the Sparsely-Gated **MoE** paper **avoid** the **gating network $G$** to **always favor the same** few strong experts?
 
 > [!answer]-
 > They soft constrain the learning with an additional importance loss $\mathcal{L}_{\text{importance}}$ that encourages all experts to have equal importance.

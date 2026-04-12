@@ -14,7 +14,7 @@ paper_url: https://arxiv.org/abs/2005.12872
 ---
 
 > [!question]
-> While **DETR **has a better AP than previous CNN based object detection algorithms, in which aspects is it worse than those models?
+> While **DETR** has a better AP than previous CNN based object detection algorithms, in which aspects is it worse than those models?
 
 > [!answer]-
 > DETR performs **worse on small objects**.
@@ -25,7 +25,7 @@ paper_url: https://arxiv.org/abs/2005.12872
 ---
 
 > [!question]
-> Why is **DETR **called an **End-to-End** detector?
+> Why is **DETR** called an **End-to-End** detector?
 
 > [!answer]-
 > DETR predicts all objects at once, without an intermediate step such as non-maximal suppression.
@@ -99,7 +99,7 @@ paper_url: https://arxiv.org/abs/2005.12872
 ---
 
 > [!question]
-> How many FLOPS and parameters does the **DETR **model have? And how accurate is it on COCO?
+> How many FLOPS and parameters does the **DETR** model have? And how accurate is it on COCO?
 
 > [!answer]-
 > **86G FLOPS** and **41M** parameters with **AP 42.0** on COCO.

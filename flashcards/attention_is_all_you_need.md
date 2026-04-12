@@ -4,7 +4,7 @@ paper_url: https://arxiv.org/abs/1706.03762
 ---
 
 > [!question]
-> Draw the general architecture of the **Transformer **model.
+> Draw the general architecture of the **Transformer** model.
 
 > [!answer]-
 > ![[transformer.png]]
@@ -14,7 +14,7 @@ paper_url: https://arxiv.org/abs/1706.03762
 ---
 
 > [!question]
-> What is an **attention **function according to the "Attention is All you Need" paper?
+> What is an **attention** function according to the "Attention is All you Need" paper?
 
 > [!answer]-
 > An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key.
@@ -47,7 +47,7 @@ paper_url: https://arxiv.org/abs/1706.03762
 
 > [!answer]-
 > ![[paste-609856fcb71f586ff92ed2bcb512e168bd03216b.jpg]]
-> Instead of performing a single attention function with $d_\text{model}$-dimensional keys, values and queries, multi-head attention **linearly project** the queries, keys and values **$h$ times with different,** **learned **linear projections to $d_k$, $d_k$ and $d_v$ dimensions, respectively. On each of these projected versions of queries, keys and values it then **performs the attention function in parallel**, yielding $d_v$-dimensional output values. These are **concatenated and once again projected**, resulting in the final values, as
+> Instead of performing a single attention function with $d_\text{model}$-dimensional keys, values and queries, multi-head attention **linearly project** the queries, keys and values **$h$** times with different, **learned** linear projections to $d_k$, $d_k$ and $d_v$ dimensions, respectively. On each of these projected versions of queries, keys and values it then **performs the attention function in parallel**, yielding $d_v$-dimensional output values. These are **concatenated and once again projected**, resulting in the final values, as
 > depicted above.
 >
 > Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. With a single attention head, averaging inhibits this.
@@ -73,12 +73,12 @@ paper_url: https://arxiv.org/abs/1706.03762
 ---
 
 > [!question]
-> What are the **three **different ways in which **multi-head attention** is used in Transformers?
+> What are the **three** different ways in which **multi-head attention** is used in Transformers?
 
 > [!answer]-
-> 1) The **encoder **contains **self-attention** layers. In a self-attention layer all of the keys, values and queries come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder.
+> 1) The **encoder** contains **self-attention** layers. In a self-attention layer all of the keys, values and queries come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder.
 >
-> 2) Similarly, **self-attention layers in the decoder **allow each position in the decoder to **attend to all positions in the decoder up to and including that position**. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot- product attention by **masking **out (setting to $- \infty$) all values in the input of the softmax which correspond to illegal connections.
+> 2) Similarly, **self-attention layers in the decoder** allow each position in the decoder to **attend to all positions in the decoder up to and including that position**. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot- product attention by **masking **out (setting to $- \infty$) all values in the input of the softmax which correspond to illegal connections.
 >
 > 3) In "encoder-decoder attention" layers, the **queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.** This allows every position in the decoder to attend over all positions in the input sequence
 
@@ -87,7 +87,7 @@ paper_url: https://arxiv.org/abs/1706.03762
 ---
 
 > [!question]
-> How are the **feed forward layers** used in the **Transformer **model?
+> How are the **feed forward layers** used in the **Transformer** model?
 
 > [!answer]-
 > In addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully connected feed-forward network, which is applied to each position separately and identically. For this reason it's often called a **Position-wise Feed Forward layer**. 

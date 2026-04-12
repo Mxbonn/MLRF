@@ -4,7 +4,7 @@ paper_url: https://arxiv.org/abs/1511.07122
 ---
 
 > [!question]
-> What is the mathematical formula of a **dilated convolution **$\left(k \ast_{l} f\right)_t$?
+> What is the mathematical formula of a **dilated convolution** $\left(k \ast_{l} f\right)_t$?
 
 > [!answer]-
 > $\left(k \ast_{l} f\right)_t = \sum_{\tau=-\infty}^{\infty} k_\tau \cdot f_{\tau - lt}$,
@@ -21,7 +21,7 @@ paper_url: https://arxiv.org/abs/1511.07122
 > What is a different name for a **dilated** convolution?
 
 > [!answer]-
-> **Atrous **convolution.
+> **Atrous** convolution.
 
 <!-- guid: rgD@/f8b,7 -->
 

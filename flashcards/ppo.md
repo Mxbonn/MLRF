@@ -7,7 +7,7 @@ paper_url: https://arxiv.org/abs/1707.06347
 > What is **Proximal Policy Optimization** (**PPO**)?
 
 > [!answer]-
-> **Proximal Policy Optimization (PPO)**, is an algorithm that** improves an agent’s training stability by avoiding too large policy updates**. To do that, it uses a ratio that indicates the difference between the current and old policy and clips this ratio from a specific range $[1 - \epsilon, 1 + \epsilon]$.
+> **Proximal Policy Optimization (PPO)**, is an algorithm that **improves an agent’s training stability by avoiding too large policy updates**. To do that, it uses a ratio that indicates the difference between the current and old policy and clips this ratio from a specific range $[1 - \epsilon, 1 + \epsilon]$.
 
 <!-- guid: QHc.i6H]HT -->
 

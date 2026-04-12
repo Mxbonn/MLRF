@@ -39,7 +39,7 @@ paper_url: https://arxiv.org/abs/2104.00432
 ---
 
 > [!question]
-> What is an **Overanchorized **network?
+> What is an **Overanchorized** network?
 
 > [!answer]-
 > It is as an object detection model that has more anchors than strictly needed.
@@ -52,7 +52,7 @@ paper_url: https://arxiv.org/abs/2104.00432
 ---
 
 > [!question]
-> When is an <u>object detection anchor</u>** redundant**?
+> When is an **object detection anchor** redundant?
 
 > [!answer]-
 > An anchor is redundant when it produces bounding boxes that are (almost) completely covered by predictions of neighboring anchors.
@@ -82,7 +82,7 @@ paper_url: https://arxiv.org/abs/2104.00432
 ---
 
 > [!question]
-> Which technique can reduce the FLOPS of the **object detection <u>head</u>**<u> </u>**by 50% without loss in accuracy**?
+> Which technique can reduce the FLOPS of the **object detection <u>head</u>** **by 50% without loss in accuracy**?
 
 > [!answer]-
 > **Anchor Pruning**

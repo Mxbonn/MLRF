@@ -4,7 +4,7 @@ paper_url: https://arxiv.org/abs/1905.13214
 ---
 
 > [!question]
-> Which **metric **is a better and more robust way to **compare model families** (e.g. ResNets vs VGG family) than the traditional way of point estimates or a curve estimate of a handful of picked models (see Fig 1 (a) and (b))
+> Which **metric** is a better and more robust way to **compare model families** (e.g. ResNets vs VGG family) than the traditional way of point estimates or a curve estimate of a handful of picked models (see Fig 1 (a) and (b))
 > ![[paste-6b860bdb1b0691e2f86c94feeeed1367d2cfc801.jpg]]
 
 > [!answer]-
@@ -20,10 +20,10 @@ paper_url: https://arxiv.org/abs/1905.13214
 ---
 
 > [!question]
-> What is an issue with the** error EDF** **$$F(e) = \frac{1}{n} \sum^n_{i=1} \mathbb{1}[e_i &lt; e]$$ **when comparing distributions of different network families, and how can it be solved?
+> What is an issue with the **error EDF $$F(e) = \frac{1}{n} \sum^n_{i=1} \mathbb{1}[e_i &lt; e]$$** when comparing distributions of different network families, and how can it be solved?
 
 > [!answer]-
-> **It does not control for confounding factors like network complexity. **Model families which in general produce models of a larger complexity tend to have a better error.
+> **It does not control for confounding factors like network complexity.** Model families which in general produce models of a larger complexity tend to have a better error.
 > ![[paste-525ee15f00c2312faf9e0a0e8da41d7ab092b241.jpg]]
 >
 > This can be solved by working with a <b style="text-decoration-line: underline;">normalized</b> **error EDF:

@@ -1,5 +1,5 @@
 ---
-paper_title: "Extracting and Composing Robust Features with Denoising&nbsp;Autoencoders"
+paper_title: "Extracting and Composing Robust Features with Denoising Autoencoders"
 paper_url: http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf
 ---
 

@@ -67,13 +67,10 @@ paper_url: https://arxiv.org/abs/2307.10780
 > What does the **threshold masking module in LTMP** look like?
 
 > [!answer]-
-> $$    M(\mathbf{s}^l_i, \theta^l) = \begin{cases}
->        1, &amp;\text{if }\mathbf{s}^l_i &gt; \theta^l\\
->        0, &amp;\text{otherwise}
->     \end{cases}$$
->  where $\theta$ is the learned threshold.
+> $$M(\mathbf{s}^l_i, \theta^l) = \begin{cases} 1, &\text{if }\mathbf{s}^l_i > \theta^l\\ 0, &\text{otherwise} \end{cases}$$
+> where $\theta$ is the learned threshold.
 > To make the threshold differentiable during backpropagation it is estimated using a straight-through estimator in the backward pass.
-> $    M(\mathbf{s}^l_i, \theta^l) = \sigma(\frac{\mathbf{s}^l_i - \theta^l}{\tau})$
+> $$M(\mathbf{s}^l_i, \theta^l) = \sigma\left(\frac{\mathbf{s}^l_i - \theta^l}{\tau}\right)$$
 
 <!-- guid: nTst9vggFL -->
 

@@ -46,7 +46,7 @@ paper_url: https://arxiv.org/abs/1803.03635
 > [!answer]-
 > **When randomly reinitialized, a winning ticket learns more slowly and achieves lower test accuracy**, suggesting that initialization is important to its success.
 >
-> Experiments have shown that the winning ticket weights move further than other weights. This suggests that **the benefit of the initialization is connected to the optimization algorithm, dataset, and model. **For example, the winning ticket initialization might land in a region of the loss landscape that is particularly amenable to optimization by the chosen optimization algorithm.
+> Experiments have shown that the winning ticket weights move further than other weights. This suggests that **the benefit of the initialization is connected to the optimization algorithm, dataset, and model.** For example, the winning ticket initialization might land in a region of the loss landscape that is particularly amenable to optimization by the chosen optimization algorithm.
 
 > [!explanation]-
 > The authors hypothesize that up to a certain level of sparsity - highly overparameterized networks can be pruned, reinitialized, and retrained successfully; however, beyond this point, extremely pruned, less severely overparamterized networks only maintain accuracy with fortuitous initialization.

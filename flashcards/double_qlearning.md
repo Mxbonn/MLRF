@@ -12,7 +12,7 @@ paper_url: https://arxiv.org/abs/1509.06461v3
 > The solution to prevent this is: when we compute the Q target, we use two networks to decouple the action selection from the target Q-value generation. We:
 >
 > - Use our **DQN network** to select the best action to take for the next state (the action with the highest Q-value).
-> - Use our** Target network** to calculate the target Q-value of taking that action at the next state.
+> - Use our **Target network** to calculate the target Q-value of taking that action at the next state.
 >
 > $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [ R_{t+1} + \gamma Q(S_{t+1}, \operatorname{argmax}_{a'} Q(S_{t+1}, a';\theta);\theta^-) - Q(S_t, A_t)]$$
 >

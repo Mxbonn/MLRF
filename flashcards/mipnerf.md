@@ -26,7 +26,7 @@ paper_url: https://arxiv.org/abs/2103.13415
 > [!answer]-
 > Mip-NeRF extends NeRF to represent the scene at a continuously-valued scale, By efficiently rendering anti-aliased **conical frustums instead of rays**.
 >
-> <img alt="overview" src="rays.png">
+> ![[rays.png]]
 
 <!-- guid: A&9L1h5;a) -->
 
@@ -58,11 +58,8 @@ paper_url: https://arxiv.org/abs/2103.13415
 > [!answer]-
 > The multivariate Gaussians are transformed to **integrated positional encodings (IPE)**.
 > This is the **expected value of the positional encodings of samples from mulitvariate Gaussian**.
-> $$\begin{align}
-> \gamma(\boldsymbol{\mu}, \Sigma) 
-> &amp;= \mathbb{E}_{\mathbf{x} \sim \mathcal N(\boldsymbol{\mu}_\gamma, \Sigma\gamma)}\left[\gamma(\mathbf{x})\right] \\
-> &amp;= \begin{bmatrix} \sin(\boldsymbol{\mu}_\gamma) \circ \exp\left(-(\frac{1}{2}) \operatorname{diag}\left(\Sigma_\gamma\right)\right)
-> \\ \cos(\boldsymbol{\mu}_\gamma) \circ \exp\left(-(\frac{1}{2}) \operatorname{diag}\left(\Sigma_\gamma\right)\right)\end{bmatrix}
-> \end{align}$$
+> $$\gamma(\boldsymbol{\mu}, \Sigma) = \mathbb{E}_{\mathbf{x} \sim \mathcal N(\boldsymbol{\mu}_\gamma, \Sigma\gamma)}\left[\gamma(\mathbf{x})\right]$$
+>
+> $$\gamma(\boldsymbol{\mu}, \Sigma) = \begin{bmatrix} \sin(\boldsymbol{\mu}_\gamma) \circ \exp\left(-\frac{1}{2} \operatorname{diag}\left(\Sigma_\gamma\right)\right) \\ \cos(\boldsymbol{\mu}_\gamma) \circ \exp\left(-\frac{1}{2} \operatorname{diag}\left(\Sigma_\gamma\right)\right)\end{bmatrix}$$
 
 <!-- guid: l#+p>~GNoE -->

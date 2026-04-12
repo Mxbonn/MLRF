@@ -40,8 +40,8 @@ paper_url: https://arxiv.org/abs/2304.02643
 >
 > **Image encoder**:  an **MAE pre-trained Vision Transformer (ViT)**, minimally adapted to process high resolution inputs.
 >
-> **Prompt encoder**:  two sets of prompts: sparse (points, boxes, text) and dense (masks). They represent points and boxes by **positional encodings summed with learned embeddings** for each prompt type and **free-form text with an off-the-shelf text encoder from CLIP**. **Dense
-> prompts (i.e., masks) are embedded using convolutions and summed element-wise with the image embedding**.
+> **Prompt encoder**:  two sets of prompts: sparse (points, boxes, text) and dense (masks). They represent points and boxes by **positional encodings summed with learned embeddings** for each prompt type and **free-form text with an off-the-shelf text encoder from CLIP**.
+> **Dense prompts (i.e., masks) are embedded using convolutions and summed element-wise with the image embedding**.
 >
 > **Mask decoder**: The design employs a modification of a Transformer decoder block followed by a dynamic mask prediction head. The modified decoder block uses **prompt self-attention and cross-attention in two directions** (prompt-to-image embedding and vice-versa) to update all embeddings. After running two blocks, they upsample the image embedding and an** MLP maps the output token to a dynamic linear classifier**, which then computes the mask foreground probability at each image location.
 

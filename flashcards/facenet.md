@@ -34,7 +34,7 @@ paper_url: https://arxiv.org/abs/1503.03832
 > In **triplet loss**, how are the anchor $\mathbf{x}$, positive $\mathbf{x}^+$ and negative $\mathbf{x}^-$ triplets selected?
 
 > [!answer]-
-> Using large batches,** all anchor-positive pairs** are selected.
+> Using large batches, **all anchor-positive pairs** are selected.
 > **Negatives** are selected such that $\|f(\mathbf{x}) - f(\mathbf{x}^+)\|^2_2 &lt; \|f(\mathbf{x}) - f(\mathbf{x}^-)\|^2_2 $. These negatives are called *semi-hard*.
 
 <!-- guid: *0?.?#HKX -->

@@ -34,9 +34,9 @@ paper_url: https://arxiv.org/abs/2201.05989
 > How is an **input coordinate $\mathbf{x} \in \mathbb{R}^d $ mapped to $L$ voxels** in *instant-ngp*?
 
 > [!answer]-
-> The $L$ voxels represent the different resolutions $N_l$ between the coarsest and finest resolutions $[N_\min, N_\max]$:
-> $$b = \exp(\frac{\ln(N_\max) - \ln(N_\min)}{L-1})$$
-> $$N_l = \lfloor N_\min \cdot b^l \rfloor$$
+> The $L$ voxels represent the different resolutions $N_l$ between the coarsest and finest resolutions $[N_{\min}, N_{\max}]$:
+> $$b = \exp(\frac{\ln(N_{\max}) - \ln(N_{\min})}{L-1})$$
+> $$N_l = \lfloor N_{\min} \cdot b^l \rfloor$$
 > The voxel corners are then located at $\lfloor\mathbf{x}\cdot N_l\rfloor$ and $\lceil\mathbf{x}\cdot N_l\rceil$.
 
 <!-- guid: z3@@5,raO: -->

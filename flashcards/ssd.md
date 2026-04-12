@@ -4,7 +4,7 @@ paper_url: https://arxiv.org/abs/1512.02325
 ---
 
 > [!question]
-> What is the general **architecture **of the **Single-Short Detector** (SSD)?
+> What is the general **architecture** of the **Single-Short Detector** (SSD)?
 
 > [!answer]-
 > ![[SSD-architecture.png]]
@@ -55,7 +55,7 @@ paper_url: https://arxiv.org/abs/1512.02325
 ---
 
 > [!question]
-> *During training*, **how **does SSD determine which default bounding boxes correspond to a ground truth box?
+> *During training*, **how** does SSD determine which default bounding boxes correspond to a ground truth box?
 
 > [!answer]-
 > A default bounding box **matches any ground truth box with jaccard overlap higher than a threshold** (0.5).
@@ -68,7 +68,7 @@ paper_url: https://arxiv.org/abs/1512.02325
 ---
 
 > [!question]
-> *During training*, **how **does **SSD **deal with the large number of default bounding boxes that do not match with a ground truth box?
+> *During training*, **how** does **SSD** deal with the large number of default bounding boxes that do not match with a ground truth box?
 
 > [!answer]-
 > SSD uses a technique called **hard negative mining**:

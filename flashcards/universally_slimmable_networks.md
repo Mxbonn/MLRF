@@ -4,10 +4,10 @@ paper_url: https://arxiv.org/abs/1903.05134
 ---
 
 > [!question]
-> What is the main **difference **between the original slimmable networks paper and the **universally slimmable networks** paper?
+> What is the main **difference** between the original slimmable networks paper and the **universally slimmable networks** paper?
 
 > [!answer]-
-> The originally slimmable networks could only be slimmed to predefined widths (e.g. [0.25, 0.5, 0.75, 1.0]), the universally slimmable networks (US-Nets)** extend this to networks of arbitrary width**.
+> The originally slimmable networks could only be slimmed to predefined widths (e.g. [0.25, 0.5, 0.75, 1.0]), the universally slimmable networks (US-Nets) **extend this to networks of arbitrary width**.
 
 > [!explanation]-
 > ![[paste-fbc9e5d9a20d571719f5aac761c3ce8c8ae820a6.jpg]]

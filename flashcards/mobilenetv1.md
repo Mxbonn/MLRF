@@ -24,7 +24,7 @@ paper_url: https://arxiv.org/abs/1704.04861
 ---
 
 > [!question]
-> How much** reduction in computation** do you get by replacing standard convolutions with depthwise separable convolutions?
+> How much **reduction in computation** do you get by replacing standard convolutions with depthwise separable convolutions?
 
 > [!answer]-
 > **Computational cost standard convolution**:
@@ -82,7 +82,7 @@ paper_url: https://arxiv.org/abs/1704.04861
 ---
 
 > [!question]
-> How many multiply-adds and parameters does the default **MobileNetV1 **have? And how much accuracy does it get on ImageNet?
+> How many multiply-adds and parameters does the default **MobileNetV1** have? And how much accuracy does it get on ImageNet?
 
 > [!answer]-
 > **569M MAdds** and **4.2M parameters** with an accuracy of **70.6%** on ImageNet.

@@ -25,7 +25,7 @@ paper_url: https://arxiv.org/abs/2311.14155
 > GigaPose estimates only 2 DOF using templates: the **out-of-plane rotations (azimuth and elevation)** previous methods also estimated the in-plane rotation.
 
 > [!explanation]-
-> The **in-plane **rotation is the rotation of the object that can also be performed by rotating the image. The **out-of-plane** rotation are the rotation about the other axis.
+> The **in-plane** rotation is the rotation of the object that can also be performed by rotating the image. The **out-of-plane** rotation are the rotation about the other axis.
 
 <!-- guid: eF+gWiF}g. -->
 
@@ -35,10 +35,10 @@ paper_url: https://arxiv.org/abs/2311.14155
 > Give an overview of the **GigaPose** method.
 
 > [!answer]-
-> <img alt="overview" src="inference.png">
+> ![[inference.png]]
 > GigaPose first onboards each novel object by **rendering 162 templates**, spanning the spectrum of **out-of-plane** rotations. For each template they then extract dense features using $\mathbf{F_{ae}}$. At runtime, the query image segmented with **CNOS**, is processed 
 > by masking the background, cropping on the segment, adding padding then resizing, and features are extracted with $\mathbf{F_{ae}}$. 
-> The** nearest template** to the segment is retrieved **using a patch-based similarity metric**. 
+> The **nearest template** to the segment is retrieved **using a patch-based similarity metric**. 
 > The 2D scale and** in-plane rotation** are computed from a single 2D-2D correspondence **using **$\mathbf{F_{ist}}$** and 2 MLPs**. 
 > The 2D position of the correspondences also gives us the 2D translation which is used with 2D scale, in-plane rotation to create the affine transformation $M_{t→q}$ , mapping the nearest template to the query image. This gives the complete 6D object pose from a single correspondence. **RANSAC** is used to robustly find the best pose candidate.
 

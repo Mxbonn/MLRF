@@ -24,7 +24,7 @@ paper_url: https://arxiv.org/abs/2203.17234
 >  Previous papers used the **Triplet loss** function but this performs worse.
 
 > [!explanation]-
-> This loss is also known as the **NT-Xent loss **in in the SimCLR paper.
+> This loss is also known as the **NT-Xent loss** in the SimCLR paper.
 
 <!-- guid: b.;~HE38#3 -->
 

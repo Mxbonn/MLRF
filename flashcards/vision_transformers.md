@@ -44,7 +44,7 @@ paper_url: https://arxiv.org/abs/2010.11929
 ---
 
 > [!question]
-> What was the most crucial element to get **Transformers **to work well in **vision**?
+> What was the most crucial element to get **Transformers** to work well in **vision**?
 
 > [!answer]-
 > **Dataset size**.
@@ -81,11 +81,11 @@ paper_url: https://arxiv.org/abs/2010.11929
 ---
 
 > [!question]
-> How many FLOPS and parameters does the **ViT **model have? And how accurate is it on ImageNet?
+> How many FLOPS and parameters does the **ViT** model have? And how accurate is it on ImageNet?
 
 > [!answer]-
 > **ViT-B/16** has **33G FLOPS 86M Params** and an ImageNet accuracy of **85.43**.
-> **ViT-L/16 **has **117G FLOPS 304M Params** and an ImageNet accuracy of **85.63**.
+> **ViT-L/16** has **117G FLOPS 304M Params** and an ImageNet accuracy of **85.63**.
 
 > [!explanation]-
 > The reported accuracies come from the official models when pre-trained on ImageNEt-21k.
@@ -102,8 +102,8 @@ paper_url: https://arxiv.org/abs/2010.11929
 > Or 1 month when using 8 cores.
 
 > [!explanation]-
-> While this does require a lot of compute, **Vision Transformers are more efficient to pretrain than ResNet based architectures.
-> **![[paste-8b6b82ed26192e3ab97c597a9e7e113f72ae10c9.jpg]]**
-> **
+> While this does require a lot of compute, **Vision Transformers are more efficient to pretrain than ResNet based architectures**.
+> ![[paste-8b6b82ed26192e3ab97c597a9e7e113f72ae10c9.jpg]]
+> 
 
 <!-- guid: b0qv2#Js6r -->
