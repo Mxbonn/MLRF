@@ -44,3 +44,13 @@ MD files (flashcards/*.md)  ←→  CrowdAnki folder (build/)  ←→  Anki app
 2. Add any images to `flashcards/metadata/media/`
 3. Use `$$...$$` for display math, `$...$` for inline math
 4. Use `![[image.jpg]]` for local images, `![](url)` for external images
+
+## Flashcard Guidelines
+
+When creating flashcards for a paper, focus on **technical depth and architecture**, not breadth:
+
+- **Lead with architecture**: Start with how the system works (inputs, outputs, major components), then dive into design choices and trade-offs.
+- **Atomicity over combination**: Split combined questions into separate cards if each concept can stand alone (e.g., separate "Which loss is used?" from "How are actions tokenized?"). Standalone cards are more reusable.
+- **Vertical depth > horizontal breadth**: Go deep on key components (FiLM, TokenLearner, inference speed constraints) rather than broad comparisons (vs. Gato, ablations, experimental tables). Keep cards ~8–10 total.
+- **Skip meta**: Avoid cards about motivation, problem statement, dataset curation details, or experimental setup unless they directly explain a design choice.
+- **Use images strategically**: Reference actual media files from `flashcards/metadata/media/` (e.g., `![[model_diagram.png]]`); don't create placeholder references.

@@ -1,17 +1,13 @@
 # MLRF
-**M**achine **L**earning **R**esearch **F**lashcards (for [Anki](http://ankisrs.net/))
+**M**achine **L**earning **R**esearch **F**lashcards (for [Anki](http://ankisrs.net/) and [Obsidian](https://obsidian.md/))
 
 ## Description
-MLRF is a collection of machine learning flashcards that can be used with [Anki](http://ankisrs.net/).
+MLRF is a collection of machine learning flashcards that can be used with [Anki](http://ankisrs.net/) and [Obsidian](https://obsidian.md/).
 The flashcards in this repository are associated with scientific research papers in the field of machine learning.
 
-As a machine learning researcher I read a lot of papers to keep up with the state-of-the-art. 
-However, for many papers I was only able to recall "Oh I read a paper about that" when a related topic would come up months later, without being able to give much more details.
-Intrigued by the article from Michael Nielsen ["Augmenting Long-term Memory"](http://augmentingcognition.com/ltm.html), I started using Anki.
+As a machine learning researcher, I read many papers to stay current with the state-of-the-art. Yet I often found myself only vaguely remembering papers months later. Thinking only "I read something about that" without retaining the specifics. Inspired by Michael Nielsen's article ["Augmenting Long-term Memory"](http://augmentingcognition.com/ltm.html), I started using Anki and spaced repetition to fix this problem.
 
-The flashcards in this repository are not a replacement for reading the actual paper, but rather an additional resource to retain the knowledge from these papers.
-Initially the papers covered by this repository are mainly selected based on my own interests and topics I do research about.
-However, by open sourcing this repository, I invite everyone that has interests in using Anki for Machine Learning papers to collaborate on these flashcards.
+These flashcards are not a substitute for reading papers, but a complement to deepen and retain your understanding. The papers are initially selected based on my interests, but this repository is open to community contributions. If you use these flashcards with Anki or Obsidian, I'd welcome your additions and improvements.
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/11473168/118519631-9540c180-b739-11eb-8765-b8a207786bdb.png)
@@ -56,6 +52,7 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer | [[`arXiv`](https://arxiv.org/abs/1701.06538)] | [[`moe.csv`](flashcards/moe.csv)]|
 | Playing Atari with Deep Reinforcement Learning | [[`arXiv`](https://arxiv.org/abs/1312.5602)] | [[`deep_rl.csv`](flashcards/deep_rl.csv)]|
 | Proximal Policy Optimization Algorithms | [[`arXiv`](https://arxiv.org/abs/1707.06347)] | [[`ppo.csv`](flashcards/ppo.csv)]|
+| RT-1: Robotics Transformer for Real-World Control at Scale | [[`arXiv`](https://arxiv.org/abs/2212.06817)] | [[`rt1.md`](flashcards/rt1.md)]|
 | Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers | [[`arXiv`](https://arxiv.org/abs/2012.15840)] | [[`setr.csv`](flashcards/setr.csv)]|
 | SSD: Single Shot MultiBox Detector | [[`arXiv`](https://arxiv.org/abs/1512.02325)] | [[`ssd.csv`](flashcards/ssd.csv)]|
 | Segment Anything | [[`arXiv`](https://arxiv.org/abs/2304.02643)] | [[`segment_anything.csv`](flashcards/segment_anything.csv)]|
@@ -68,7 +65,25 @@ However, by open sourcing this repository, I invite everyone that has interests 
 | Universally Slimmable Networks and Improved Training Techniques | [[`arXiv`](https://arxiv.org/abs/1903.05134)] | [[`universally_slimmable_networks.csv`](flashcards/universally_slimmable_networks.csv)]|
 | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [[`arXiv`](https://arxiv.org/abs/1606.04797)] | [[`dice_loss.csv`](flashcards/dice_loss.csv)]|
 ___
+
 ## Usage
+
+### Obsidian
+
+To use the flashcards with [Obsidian](https://obsidian.md/), symlink the `flashcards` directory into your Obsidian vault:
+
+```bash
+ln -s /path/to/MLRF/flashcards /path/to/your/obsidian/vault/MLRF
+```
+
+The flashcards are stored in Markdown format using [Obsidian callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) for questions and answers:
+- `> [!question]` for the question
+- `> [!answer]-` for the answer
+- `> [!explanation]-` for additional explanation
+
+You can browse, read, and edit the flashcards directly in Obsidian. The Markdown format makes it easy to integrate with your existing notes and knowledge base.
+
+### Anki
 The flashcards in this repository are made for [Anki](http://ankisrs.net/).
 However, the cards are stored here in csv formats, so you can also use them as inputs to a different flashcards system.
 In case you edit the raw csvs and want to sync them here, you can leave the `guid` column of new cards empty.
