@@ -119,4 +119,4 @@ paper_url: https://arxiv.org/abs/2303.03378
 > What are the smallest and largest variants of **PaLM-E**?
 
 > [!answer]-
-> - **PaLM-E-62B**: 8B and 562B
+>  from 8B up to 562B
