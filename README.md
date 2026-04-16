@@ -51,6 +51,7 @@ These flashcards are not a substitute for reading papers, but a complement to de
 | On Network Design Spaces for Visual Recognitio | [[`arXiv`](https://arxiv.org/abs/1905.13214)] | [[`network_design_spaces.csv`](flashcards/network_design_spaces.csv)]|
 | Once-for-All: Train One Network and Specialize it for Efficient Deployment | [[`arXiv`](https://arxiv.org/abs/1908.09791)] | [[`once_for_all.csv`](flashcards/once_for_all.csv)]|
 | Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer | [[`arXiv`](https://arxiv.org/abs/1701.06538)] | [[`moe.csv`](flashcards/moe.csv)]|
+| PaLM-E: An Embodied Multimodal Language Model | [[`arXiv`](https://arxiv.org/abs/2303.03378)] | [[`palm_e.md`](flashcards/palm_e.md)]|
 | Playing Atari with Deep Reinforcement Learning | [[`arXiv`](https://arxiv.org/abs/1312.5602)] | [[`deep_rl.csv`](flashcards/deep_rl.csv)]|
 | Proximal Policy Optimization Algorithms | [[`arXiv`](https://arxiv.org/abs/1707.06347)] | [[`ppo.csv`](flashcards/ppo.csv)]|
 | RT-1: Robotics Transformer for Real-World Control at Scale | [[`arXiv`](https://arxiv.org/abs/2212.06817)] | [[`rt1.md`](flashcards/rt1.md)]|
