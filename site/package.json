@@ -16,6 +16,7 @@
     "astro": "^6.1.5",
     "rehype-katex": "^7.0.1",
     "rehype-stringify": "^10.0.1",
+    "remark-breaks": "^4.0.0",
     "remark-math": "^6.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",

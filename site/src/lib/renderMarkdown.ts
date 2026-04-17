@@ -1,6 +1,7 @@
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkMath from 'remark-math';
+import remarkBreaks from 'remark-breaks';
 import remarkRehype from 'remark-rehype';
 import rehypeKatex from 'rehype-katex';
 import rehypeStringify from 'rehype-stringify';
@@ -12,7 +13,7 @@ function getProcessor() {
     processor = unified()
       .use(remarkParse)
       .use(remarkMath)
-      // Use passThrough to preserve math nodes without HTML escaping
+      .use(remarkBreaks)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeKatex)
       .use(rehypeStringify, { allowDangerousHtml: true });
